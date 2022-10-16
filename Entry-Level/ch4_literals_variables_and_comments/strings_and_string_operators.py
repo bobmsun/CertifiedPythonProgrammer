@@ -1,0 +1,48 @@
+print( 'single quoted string' )      # This is what is called 'string literals'
+
+print( "double quoted string" )
+
+print( '''
+this is a triple quoted 
+multi-line stirng
+''' )
+# '\nthis is a triple quoted\nmulti-line string\n'
+
+# "This is a double quoted string'
+# SuntacError: EOL while scanning string literal
+
+
+print( "pass" + "word" )     # can combine string using +
+
+# "pass" - "word"
+# TypeError: unsupported operand type(s) for -: 'str' and 'str'
+
+print( "Ha" * 4 )
+
+
+# String is an object
+# Object is used to encapsulte 2 things: state & behavior (functionality that tied to this type, methods)
+
+"my_string".find('t')      # return 4
+"my_string".find('in')     # return 6
+"TeStInG".lower()          # return testing      
+"PassWord123".lower()      # password123        (if it doesn't have lower case, this function will do nothing, will not throw error)
+
+# 自我补充
+"hiiiii".find('i')       # return 1
+"hiiiii".find('a')       # return -1
+
+
+# Escape Sequence
+print("Tab\tDelimited")
+
+print("New\nLine")
+
+# 就想 print \n
+print("New\\nLine")
+
+
+print("'Single' in Double")
+print('"Double" in Single')
+print("\"Double\" in Double")
+
