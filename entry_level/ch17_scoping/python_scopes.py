@@ -14,6 +14,7 @@ print(x)
 # 6
 # That's because conditionals and loops do not define their own scops
 
+
 # This is a little different when it comes to functions
 
 def set_a():
@@ -29,5 +30,12 @@ while a < 6:    # NameError: name 'a' is not defined
 # 对于以上，we are not able to access a where a is only set inside the set_a() function
 
 
+
+# 自己加的, 作为之前 “conditionals and loops do not define their own scops” 的补充
+num = 1
+if 1 < 2:
+    print("num inside if:", num)   # num inside if: 1
+    num = 22
+print(num)         # 22
 
 
