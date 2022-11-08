@@ -12,12 +12,12 @@ multi-line stirng
 # SuntacError: EOL while scanning string literal
 
 
-print( "pass" + "word" )     # can combine string using +
+print( "pass" + "word" )     # password       can combine string using +
 
 # "pass" - "word"
 # TypeError: unsupported operand type(s) for -: 'str' and 'str'
 
-print( "Ha" * 4 )
+print( "Ha" * 4 )       # HaHaHaHa
 
 
 # String is an object
@@ -32,11 +32,18 @@ print( "Ha" * 4 )
 "hiiiii".find('i')       # return 1
 "hiiiii".find('a')       # return -1
 
+# 自我补充
+text = 'HelloWorld'
+print(text[5])   # w
+
 
 # Escape Sequence
-print("Tab\tDelimited")
+print("Tab\tDelimited")     # Tab     Delimited
 
 print("New\nLine")
+# New
+# Line
+
 
 # 就想 print \n
 print("New\\nLine")

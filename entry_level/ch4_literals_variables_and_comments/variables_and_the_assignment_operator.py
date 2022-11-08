@@ -3,11 +3,11 @@ my_string = "This is a simple string"
 
 print(my_string)
 
-my_string    # when we run the sript, this will not print. Have to call the print() function
+my_string        # when we run the sript, this will not print. Have to call the print() function
 
 my_string += "testing"
 
-print(my_string)
+print(my_string)        # This is a simple stringtesting
 
 
 # Variables: we can hold on contents tha we want to access later on
