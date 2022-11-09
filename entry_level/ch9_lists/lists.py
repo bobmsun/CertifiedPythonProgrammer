@@ -45,10 +45,10 @@ print(my_list + [8, 9, 10])     # here is going to return a new list
 print(id(my_list))
 my_list += [8, 9, 10]
 print(my_list)         # 这里就与 mutability 无关了  <-  这里讲错了，因为下面的地址依旧会是相同的
-print(id(my_list))
+print(id(my_list))     # (same id)
 
 # 也可以通过 slices 来 reassign 值
-print(id(my_list))
+print(id(my_list))     # (same id)
 my_list[1:3] = ['b', 'c']   
 print(my_list)              # ['a', 'b', 'c', 4, 5, 8, 9, 10]
 print(id(my_list))          # (same id) 
@@ -64,17 +64,21 @@ my_list = ['a', 'b', 'c', 'd', 5, 6, 7]
 print(id(my_list))       # 这里换了新 id
 
 my_list[4:] = []
-print(my_list)
+print(my_list)    # ['a', 'b', 'c', 'd']
 print(id(my_list))      # (same id)
 
 
 # The more common way to remove element is by using the del statement
 # del is a statement, it's different from a function
 del my_list[0]       # remove the first element in the array,    del will NOT return the element it deletes
-print(my_list[0])
+print(my_list)      # ['b', 'c', 'd']
+print(my_list[0])     # b
+
+print( type(my_list) )    # <class 'list'>
 
 del my_list          # 用 del 会有些 risky，如果 del 后面不加 index，就会 completely remove the list completely
+
+print( my_list is None )   # NameError: name 'my_list' is not defined
+print( type(my_list) )   # NameError: name 'my_list' is not defined
 print(my_list)       # NameError: name 'my_list' is not defined
-
-
 
