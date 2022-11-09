@@ -17,7 +17,7 @@ print(id(my_str))
 print(id('testing'))    # this will be the same id even though this is a literal made separately
 other_str = 'testing'
 print(id(other_str))   # Still the same id
-print( id(my_str) == id(other_str) )
+print( id(my_str) == id(other_str) )   # True
 
 # Python knows we will only need to make one of those, because strings are immutable. So it will look at the same spot of memory.
 

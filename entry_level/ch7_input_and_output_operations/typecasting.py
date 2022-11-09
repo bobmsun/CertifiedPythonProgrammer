@@ -3,11 +3,11 @@ print( float(1) )    # 1.0
 print( int(1.3) )    # 1
 print( int(1.6) )    # 1   It does not round. It just juncate
 
-print( str(1) )
-print( str(1.0) )
+print( str(1) )        # 1
+print( str(1.0) )      # 1.0
 print( str(False) )    # String 'False'
 
-# int('1.2')     # Error
+#int('1.2')     # ValueError: invalid literal for int() with base 10: '1.2'
 
 
 # Everything in Python can be turned into a Boolean. Everything has a true/false representation
@@ -20,6 +20,7 @@ print( bool('Tada') )   # True
 print( bool(0) )       # False
 print( bool(0.0) )     # False
 print( bool('') )      # False
+print( bool(None) )    # False
 # Basically everything else will be evaluated True
 
 

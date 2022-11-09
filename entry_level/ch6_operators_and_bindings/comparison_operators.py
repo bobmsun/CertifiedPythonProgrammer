@@ -9,6 +9,11 @@ print(2.0 >= 3)  # False
 
 print(2.0 >= 2)  # True
 
+# 自我补充
+print(2.0 == 2)      # True
+print(2.0 == 2.0)     # True
+
+
 # Can also compare string
 # It is comparing alphebatically 
 print('a' > 'b')     # False
@@ -29,7 +34,7 @@ print( 'a' > 'A' )   # True
 print(1 == 1)        # True
 print(1.0 == 1)      # True
 print(2 == 1.0)      # False
-print('a' == 2)      # True, Java 中也可以这样，也会 return false
+print('a' == 2)      # False, Java 中也可以这样，也会 return false
 print('a' == 'a')    # True
 
 print( 1 != 1 )      # False
