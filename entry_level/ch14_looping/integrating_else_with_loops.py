@@ -43,3 +43,12 @@ else:
 # You never want to use the else block unless you are explicitly using "break" inside the loop you are working with
 
 
+
+for color in colors:
+    if color == 'green':
+        print('Green is in the list')
+        break     # if we hit this line, the else content is never going to be executed
+else:
+    print("Green is not in the list")
+
+# Orange is in the list

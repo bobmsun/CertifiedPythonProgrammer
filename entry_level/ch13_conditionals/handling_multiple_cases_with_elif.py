@@ -1,6 +1,4 @@
 
-from codecs import BOM_BE
-
 
 if 'b' < 'a':
     print('This is true')

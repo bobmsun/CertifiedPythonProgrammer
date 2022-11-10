@@ -9,7 +9,7 @@ row_count = len(my_matrix)
 print(row_count)       # 2
 
 column_count = len(my_matrix[0])
-print(column_count)
+print(column_count)      # 3
 
 
 print(my_matrix[0][1])       # 2

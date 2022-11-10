@@ -1,5 +1,5 @@
 
-print( "This".lower )    # If you don't put any parathethis, it will just tell us this is a method on the string object. We didn't actually invoke it or call it.
+print( "This".lower )    # If you don't put any parathethses, it will just tell us this is a method on the string object. We didn't actually invoke it or call it.
 
 print("This".lower())    # this        # it's gonna return a new string
 
@@ -64,7 +64,12 @@ print( "afasdfasdf123123".isalnum() )    # True
 # or as a name of a class (anything we can use to represent a constant that we can pass around)
 print( "1bead".isidentifier() )       # False 
 print( "word".isidentifier() )        # True   return true because "word" would work to be an identifer
+print( "if".isidentifier() )         # True    （自悟：居然 return true，看来不check keyword）
 
+# From W3 school:
+# The isidentifier() method returns True if the string is a valid identifier, otherwise False.
+# A string is considered a valid identifier if it only contains alphanumeric letters (a-z) and (0-9), or underscores (_). A valid identifier 
+# cannot start with a number, or contain any spaces.
 
 
 # isprintable
@@ -72,15 +77,6 @@ print( "This is printable".isprintable() )   # True
 print( "This is printable\n".isprintable() )     # False
 # it's gonna return False even though we could print it. It's not considered printable because it has a escape charater 
 # (since escape charater cannot be printed out)
-
-
-
-
-
-
-
-
-
 
 
 

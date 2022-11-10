@@ -22,7 +22,7 @@ print(ages)         # {'kevin': 59, 'alex': 29, 'bob': 40, 'kayla': 21}
 ages['kevin'] = 60    
 print(ages)         # {'kevin': 60, 'alex': 29, 'bob': 40, 'kayla': 21}
 
-# If fthe key that you are setting does not exist in the dictionary, it will add it and set the value.
+# If the key that you are setting does not exist in the dictionary, it will add it and set the value.
 # If it does exists, then it's just going to reset the value.
 
 # remove
@@ -49,5 +49,9 @@ colors = dict([('kevin', 'blue'), ('bob', 'green'), ('kayla', 'red')])
 # and add them to the dictionary you created.
 print(colors)             # {'kevin': 'blue', 'bob': 'green', 'kayla': 'red'}
 
+
+# 自己补充：自己试了一下 list of list 也可以，但可能没有 list of tuple 常用
+colors2 = dict([['kevin', 'blue'], ['bob', 'green'], ('kayla', 'red')])   
+print(colors2)           #  {'kevin': 'blue', 'bob': 'green', 'kayla': 'red'}
 
 

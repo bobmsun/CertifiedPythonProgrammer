@@ -36,3 +36,10 @@ for _ in range(4):      # we don't need this temp variable.   _   this is saying
 
 # Using range is a easy way to create a list that don't take a large amount of space and might have many many items in them.
 
+
+# 自我补充：range 和之前 list 的 slicing 是一模一样的
+print(list(range(1, 10)))        # [1, 2, 3, 4, 5, 6, 7, 8, 9]          # default step is 1
+print(list(range(10, 1)))        # [] 
+print(list(range(10, 1, -1)))    # [10, 9, 8, 7, 6, 5, 4, 3, 2]
+print(list(range(1, 10, -1)))    # [] 
+

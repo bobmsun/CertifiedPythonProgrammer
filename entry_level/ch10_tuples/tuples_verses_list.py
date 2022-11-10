@@ -27,8 +27,8 @@ print(other_list)        # [1, 2, ([1, 2, 3], 1)]
 
 # Even though we cannot change the tuple itself, we can change the thing that it is pointing at, in this cast, the list
 my_list.append(1)
-print(my_tuple)
-print(other_list)      # that also picked up the change
+print(my_tuple)        # ([1, 2, 3, 1], 1)
+print(other_list)      # that also picked up the change     [1, 2, ([1, 2, 3, 1], 1)]
 
 
 

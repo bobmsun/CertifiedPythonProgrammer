@@ -34,7 +34,7 @@ my_list = [1, 3, 4, 8, 2]
 print(id(my_list))
 print(sorted(my_list))      # it's gonna reture a NEW list
 my_list2 = sorted(my_list)
-print(id(my_list2))
+print(id(my_list2))         # 不同于上面的 id
 
 # reverse a list
 print(reversed(my_list))      # it will return a reverse iterator object, so we have to convert it to a list

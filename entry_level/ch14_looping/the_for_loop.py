@@ -27,6 +27,12 @@ for key in ages:
 # bob
 # kayla
 
+# Recall Dictionary 那章：
+ages = {'kevin': 61, 'bob': 79 }
+print( ages.items() )        # a list of tuples            dict_items([('kevin', 61), ('bob', 79)])
+print( list(ages.items()) )    # [('kevin', 61), ('bob', 79)]
+
+
 
 # If you want to iterate over both the key and the value, you can do this. It's going to unpack that.
 # It's unpacked in the same way as we unpack key, value = (a tuple of two items)
