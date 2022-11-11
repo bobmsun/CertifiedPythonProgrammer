@@ -1,7 +1,7 @@
 
-# 即使我们刚刚学习了 name hiding (shadowing), it doesn't mean that we always our variables to be local to a function
-# Occasionally we want to be able to call a function and it changes some global state
-# 这是我们可以用 global keyword that will allow us to do that, but it has some limitations
+# 即使我们刚刚学习了 name hiding (shadowing), it doesn't mean that we always want our variables to be local to a function
+# Occasionally we want  to be able to call a function and it changes some global state
+# 这是我们可以用 "global" keyword that will allow us to do that, but it has some limitations
 
 
 # 例 1
@@ -29,11 +29,19 @@ def set_x2(z):
     y = x
     a = 7
 
-print("y before set_x:", y)
+print("y before set_x:", y)        # y before set_x: 5
 
 set_x2(10)
-print("y after set_x", y)
-print("a after set_x", a)
+print("y after set_x", y)          # y after set_x 10
+print("a after set_x", a)          # a after set_x 7
+
+
+# 对于例2 自己补充
+# def create_var():
+#     global aa 
+
+# create_var()
+# print(aa)      # NameError: name 'aa' is not defined
 
 
 
