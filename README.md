@@ -1,3 +1,2 @@
 # CertifiedPythonProgrammer
-hello
-hello * 2
+This is the study notes of the Python course on ACloudGuru
