@@ -35,7 +35,7 @@ def can_drive(age, driving_age=16):
 print( can_drive(29) )      # True   don't need to explicitly specify driving_age, since it has default value)
 
 
-print( can_drive(16, driving_age=18) )     # False    If you have a very long list of argument that has default and you only want to modify the value of one of them, you can to this
+print( can_drive(16, driving_age=18) )     # False    If you have a very long list of argument that has default and you only want to modify the value of one of them, you can do this
 
 print( can_drive(16, 18) )          # False
 

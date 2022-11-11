@@ -5,8 +5,6 @@
 
 # functions whose name starts with underscore _, those indicate some sort of hidden functions (it's not something you are going to call directly most of the time)
 
-from turtle import fd
-
 
 def print_something(something):   # parameter - is going to be some variable that exists inside the body of the function
     pass

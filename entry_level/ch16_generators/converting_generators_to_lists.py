@@ -7,12 +7,12 @@ def gen_range(stop, start=1, step=1):
         yield num
         num += step 
 
-# 之前讲过，we can convert "range" into a list. We can also convertor generator into a list
+# 之前讲过，we can convert "range" into a list. We can also convert generator into a list
 # The "list" function that we have been using for tpye-casting is pretty dynamic
 # It will work for our customer generator also.
 generator = gen_range(10)
 print( list(generator) )   # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# 这样做也不是什么时候都 work，sometimes you'll have a infinite generator. 这是就会有问题，when we are trying to convert it into list
+# 这样做也不是什么时候都 work，sometimes you'll have a infinite generator. 这时就会有问题，when we are trying to convert it into list
 
 def gen_fib():
     a, b = 0, 1

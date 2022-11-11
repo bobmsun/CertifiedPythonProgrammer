@@ -35,7 +35,7 @@ for num in gen_range(10, step=2):
 # 5
 # 7
 # 9
-# The way taht "for" works is that it's gonna continue to call "next" until it would have run into a StopIteration error
+# The way that "for" works is that it's gonna continue to call "next" until it would have run into a StopIteration error
 # and then it's gonna consider it to be completed
 
 # So we won't mannally call the "next" function very often, we will just use it in the context of a "for" loop or what we will 
@@ -55,5 +55,5 @@ print( a_num )     # 33
 # The yield statement suspends a function’s execution and sends a value back to the caller, 
 # but retains enough state to enable the function to resume where it left off. 
 # When the function resumes, it continues execution immediately after the last yield run. 
-# his allows its code to produce a series of values over time, rather than computing them at once and sending them back like a list.
+# This allows its code to produce a series of values over time, rather than computing them at once and sending them back like a list.
 
