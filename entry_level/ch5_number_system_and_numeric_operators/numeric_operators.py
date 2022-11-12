@@ -20,6 +20,12 @@ print(6 // 3)      # 2
 print(-5 // 3)     # -2   NOT -1    Java 中 -5 / 3 = -1
 # 自悟：这点和 Java 不一样，Java 是向零取整，而 Python 是向下取整
 
+
+# 关于 flour division 自己加：
+print(15.0 // 7)     # 2.0    不是 整数 2
+# 自悟：所以 // 是 floor division，不是 integer division, 并不是说，// 除出来的结果肯定是整数，如果运算子中有 float，结果也会是 float
+
+
 # Remainder
 print(5 % 3)     # 2
 print(-5 % 2)    # 1    Java 中 -5 % 2 = -1
@@ -29,3 +35,5 @@ print(-5 // 2)   # -3   Java 中 -5 / 2 = -2
 
 # Power
 print(2 ** 3)    # 8
+
+

@@ -13,6 +13,12 @@ print(id(my_list))     # (same id)
 my_list.insert(0, 'a')
 print(my_list)             # ['a', 1, 2, 3, 4]
 
+
+
+
+
+
+
 # If we want to know the actual position of an item, we can use the "index" function
 my_list = [1, 2, 3]
 print(my_list.index(2))       # 1
@@ -21,6 +27,15 @@ print(my_list.index(2))       # 1
 # Because above can raise an error, so there are other operations that can help us determine if we will run into the above situation
 # That is the "in" and "not in" operation
 
+# 自己加：如果有多个满足条件元素，返回第一个的 index
+my_list = [1, 2, 3, 2, 2]
+print(my_list.index(2))      # 1
+
+
+
+
+
+# 判断是否在 list 中
 my_list = [1, 2, 3]
 print(4 in my_list)          # False
 print(4 not in my_list)      # True
@@ -29,12 +44,30 @@ print(2 in my_list)          # True
 # check 是否 in 之后，就可以知道是否可以调用 index() function 了
 
 
+
+
+
 # Sorting
 my_list = [1, 3, 4, 8, 2]
 print(id(my_list))
 print(sorted(my_list))      # it's gonna reture a NEW list
 my_list2 = sorted(my_list)
 print(id(my_list2))         # 不同于上面的 id
+print(my_list)      # [1, 3, 4, 8, 2]     my_list 本身并没有改变，sorted() 函数并不是 sort in place，而是生成了新的 list
+
+print(id(my_list))
+my_list.sort()
+print(my_list)      # [1, 2, 3, 4, 8]
+print(id(my_list))      # 和上面的 id 相同
+
+# 想 sort list 有两种方法：
+# 用 built-in function: sorted()
+# call list 的 sort() function
+# 区别在于 sort() 是 in-place sort 的，没有新的 list 生成；而 sorted() 不是 in place 的，生成了新的 list
+
+
+
+
 
 # reverse a list
 print(reversed(my_list))      # it will return a reverse iterator object, so we have to convert it to a list
@@ -50,3 +83,18 @@ print( list(reversed(sorted(my_list))) )
 # Otherwise it gonna eventually run into an Error
 
 
+# 自己加：remove element from a list
+# 法一：用 remove function
+names = ['Alice', 'Bob', 'Lance', 'Mike']
+names.remove('Bob')
+print(names)             # ['Alice', 'Lance', 'Mike']
+
+# 如果有多个元素，remove 函数之后remove first occurance 
+numbers = [1, 2, 3, 3, 2]
+numbers.remove(2)
+print(numbers)           # [1, 3, 3, 2]
+
+# 法二：通过 slicing 来 remove
+names = ['Alice', 'Bob', 'Lance', 'Mike']
+names[1:2] = []
+print(names)             # ['Alice', 'Lance', 'Mike']

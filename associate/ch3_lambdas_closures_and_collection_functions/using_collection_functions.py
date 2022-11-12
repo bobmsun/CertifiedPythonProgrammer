@@ -1,7 +1,7 @@
 
 # 这节课在于展示 when Lambda will be useful, 通过 collection function 来展示：
-# 有一下 collection functions 是之前讲过的: reversed, sorted 
-# 也有一些是新的：map, filter, and reduct
+# 有一些 collection functions 是之前讲过的: reversed, sorted 
+# 也有一些是新的：map, filter, and reduce
 
 # All these functions are kind of special, because they're what are known as "higher order functio": a function
 # that can take in another function as an argument or return a function as a return value
@@ -15,13 +15,23 @@
 
 domain = [1, 2, 3, 4, 5]
 # f(x) = x * 2
-# 当我们 pass 一个 function 给 map function 时，it's gonna be the function without calling it. So 这是我们就可以用 lambda
+# 当我们 pass 一个 function 给 map function 时，it's gonna be the function without calling it. So 这时我们就可以用 lambda
 our_range = map(lambda num: num * 2, domain)
 print(list(our_range))     # [2, 4, 6, 8]  # need to conver our_range into a list, otherwise it's a map object
 print(our_range)         # <map object at 0x7fd2d72546a0>
 # 对于 map function 来说，the result is always going to have the same length as the input
 
 # map allows us to do something that 可能需要 a for loop （or you can use list comprehension)
+
+
+# 自己加：map 不一定非要take lambda function，也可以 take 一般的非 lambda 函数
+def square(num):
+    return num * num
+our_range_square = map(square, domain)     
+print(list(our_range_square))       # [1, 4, 9, 16, 25]
+
+
+
 
 
 
@@ -31,9 +41,10 @@ print(our_range)         # <map object at 0x7fd2d72546a0>
 evens = filter(lambda num: num % 2 == 0, domain)
 # for filter function, the lambda needs to return a true/false value. If the value is true, then the particular item that we are currently working with 
 # as we are iterating our list is going to be kept and put into the final list that gonna be returned back to us.
-# if it does meet the criteria, it will no make to the final result
+# if it does not meet the criteria, it will not make to the final result
 print(list(evens))       #  [2, 4]
 print(evens)       # it's gonna give you a filter object   <filter object at 0x7fd2d73c6ba8>
+
 
 
 
@@ -57,6 +68,12 @@ print(the_sum)       # 15
 print( sum(domain) )      # 15
 
 # reduce 比 map 和 filter 有一点 complecated 的 点在于: we have to consider the state of each iteration
+
+# 自己加的：
+a_string = reduce(lambda string, letter: string + letter, ['a', 'b', 'c', 'd'], '')
+print(a_string)           # abcd
+
+
 
 
 

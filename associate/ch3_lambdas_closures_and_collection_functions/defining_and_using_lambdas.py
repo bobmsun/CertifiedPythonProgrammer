@@ -4,7 +4,7 @@
 # have a repeatable bit of code,
 # but it's not really warranted to create a function for it, and we want to do it quick and easily in line.
 
-# mrdir XXXXX
+# mkdir XXXXX
 # rm -rf XXXX
 
 # 相比较于普通 function，lambda function 的 function body only gets one expression
