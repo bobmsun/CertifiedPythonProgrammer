@@ -16,6 +16,7 @@ print(f"Uppercase Letters: {extract_upper(extras.name)}")
 # (这里注意，这里并没有打印 HELLO FROM HELPERS，that's because in the first import [from helpers import *], the module is read in
 # Every subsequent time that it is read in, it doesn't need to be re-read, because it has ready been written to the application, the interprator already
 # has that stuff in memory)
+# 自己试了一下：如果只 import extras 不 import helpers，那么就会 print 出 HELLO FROM HELPERS
 # Lowercase Letters: ['e', 'i', 't', 'h', 'h', 'o', 'm', 'p', 's', 'o', 'n']
 # Uppercase Letters: ['K', 'T']
 
