@@ -2,7 +2,7 @@
 # modules in Python are just files
 
 # It's gonna return a list that are all upper case letters
-# phrase can a string. String is an iterable (iterable 就是 something you can do a for loop over)
+# Phrase can be a string. String is an iterable (iterable 就是 something you can do a for loop over)
 def extract_upper(phrase):
     return list(filter(str.isupper, phrase))    # whenever the character is upper case, then we are gonna return that 
 # So the function will take a string and return a list of only upper characters inside of that
@@ -15,6 +15,6 @@ def extract_lower(phrase):
 
 # Modules can define more than functions. As we get further along, we can define classes to create our own types so that we can model data
 
-# Anything we can give a name is something that can then be pulled in by something accessing the module. 
+# Anything we can give a name is something that can then be pulled in by something accessing this module. 
 # Functions have name. Other things that have name are variables.
 

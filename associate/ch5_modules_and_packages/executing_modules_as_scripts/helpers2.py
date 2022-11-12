@@ -9,4 +9,4 @@ def extract_lower(phrase):
 
 print("HELLO FROM HELPERS")
 
-print(f"__name__ in helper2.py: {__name__}")
+print(f"__name__ in helpers2.py: {__name__}")

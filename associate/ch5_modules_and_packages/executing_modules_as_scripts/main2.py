@@ -11,8 +11,8 @@ print(f"Uppercase Letters: {extract_upper(extras2.name)}")
 
 # 打印：
 # HELLO FROM HELPERS
-# __name__ in helper2.py: helpers2
-# __name__ in extra2.py: extras2
+# __name__ in helpers2.py: helpers2
+# __name__ in extras2.py: extras2
 # __name__ in main2.py: __main__   （这里是 __main__ 是因为 we are actively running the main and this is the thing we can leverage to add different mode to different modules）
 #                                 (可以利用这一点加 condition：do this only when we are running this script)
 # Lowercase Letters: ['e', 'i', 't', 'h', 'h', 'o', 'm', 'p', 's', 'o', 'n']
