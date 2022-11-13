@@ -1,0 +1,65 @@
+
+Helper Modules: the math and random Modules
+
+They just give us some useful functions when we need them
+
+
+The math Module:
+it provides some complicated math function (goes beyond standard operators) and some constants
+
+Trigonometry:
+sin, cos, tan, and hypot
+Trigonometric math is handy (computers render a lot of triangles). A large chunk of the math module consists of trig functions.
+
+Rounding:
+floor, ceil, and trunc
+When the standard round function doesn't quite do what you need it to, you can use floor, ceil, or trunc.
+floor: we also want to go to the nearest whole number.
+ceil: the next higheset whole number
+
+Extras:
+sqrt, factorial, etc.
+There are quite a few different mathematical operations that we may want to use that aren't covered by operations. 
+For those, we will first check the math module.
+
+
+The random module:
+1. random.random is the Base for All Randomness:
+    Nearlly arr functions in the random module are based off the random.random function, which returns a float between 0.0 and 1.0.
+2. Seeding the Generator:
+    When you need predictable randomness, you'll want to use the random.seed function to configure the generator.
+3. Choice, Sample, and Shuffle
+    Three of the most used randomness functions are choice, sample, and shuffle.
+    choice: choice is going to take some sort of sequence and it's going to return you one element from the sequence at random
+    sample: sample is gonna take a sequence and a length that you want. And it's gonna return you another sequence of the that length that contains
+            random elements from the parent. Basically, you can take a subsection at random. (take a sample from it)
+    shuffle: shuffle is going to randomize in place the thing you give it. So shuffle only works on mutable data type. So cannot use shuffle on a tuple.
+
+
+
+
+Helpfule Modules:
+The platform module
+
+The platform module can let us have the information of the machine that we are executing our code on. 
+This is especially useful if you write code that you need to run on different types of servers and you want to handle things properly for each one.
+
+可以给我们
+python-specific information
+也可以给我们
+operating system specific information
+
+https://docs.python.org/3/library/platform.html
+
+>>> platform.python_version()                Returns the Python version as string 'major.minor.patchlevel'.
+'3.7.3'             
+
+>>> platform.node()
+'Shihaos-MacBook-Pro.local'
+
+>>> platform.machine()
+'x86_64'
+
+>>> platform.uname()
+uname_result(system='Darwin', node='Shihaos-MacBook-Pro.local', release='21.5.0', version='Darwin Kernel Version 21.5.0: Tue Apr 26 21:08:22 PDT 2022; root:xnu-8020.121.3~4/RELEASE_X86_64', machine='x86_64', processor='i386')
+
