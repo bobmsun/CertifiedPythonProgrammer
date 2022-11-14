@@ -1,13 +1,14 @@
 
 # Modeling Vehicles (design a blueprint for a type of concept)
-
+# Defining a type
 class Vehicle:
     """
-    Vehicle is a type that describes a machine that helpes us travel.
+    Vehicle is a type that describes a machine that helpes us travel. (This is the docstring)
     """
 
     # This function is how we customize the creation of an object
-    # From inside of the function, self is going to represent the instance that we are working with
+    # You will see "self" all the time in object-oriented code. That's because,
+    # from inside of the function, self is going to represent the instance that we are working with
     # def __init__(self):
     #     """
     #     Customizes the initializetion of the object
@@ -26,11 +27,12 @@ class Vehicle:
 
 
 # python -i vehicle.py
-# civic = Vehicle('3-cyclinder', ['front-deriver', 'front-passenger', 'rear-driver', 'rear-passenger'])
-# civic
-# type(civic)
-# civic.engine
+# civic = Vehicle('4-cyclinder', ['front-deriver', 'front-passenger', 'rear-driver', 'rear-passenger'])         # we don't pass in self, self is passed in implicitly
+# civic                            # <__main__.Vehicle object at 0x7fe42b3bef28>
+# type(civic)                      # <class '__main__.Vehicle'>
+# civic.engine                     # '4-cyclinder'
 # civic.tires
+# civic.description                # <bound method Vehicle.description of <__main__.Vehicle object at 0x7fe42b3bef28>>
 # civic.description()
 # civic.serial_number = '1234'     # it has engine and tires, you can also attach more things
 # civic.serial_number
@@ -43,10 +45,13 @@ class Vehicle:
 # which is NOT necessarily all that useful.
 
 # dir(civic)
+# ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', 
+# '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
+# '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'description', 'engine', 'serial_number', 'tires']
+
 # del civic.serial_number
-# civic.serial_number
+# civic.serial_number                # AttributeError: 'Vehicle' object has no attribute 'serial_number'
 
-
-
-
+# del civic
+# civic                              # NameError: name 'civic' is not defined
 

@@ -15,3 +15,8 @@ print( ages.items() )        # a list of tuples            dict_items([('kevin',
 print( list(ages.items()) )    # [('kevin', 61), ('bob', 79)]
 
 
+# 自己加：直接用 for loop go over 一个 dict，go over 的是 key
+for i in ages:
+    print(i)
+# kevin
+# bob

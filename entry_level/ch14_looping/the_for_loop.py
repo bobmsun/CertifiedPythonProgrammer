@@ -43,6 +43,15 @@ for key, value in ages.items():
 # kayla 21
 
 
+# 自己加：
+for i in ages:
+    print(i)
+# kevin
+# bob
+# 自悟：如果直接用 for loop iterate 一个 dict，iterate 的是 key
+
+
+
 # Can also iterate a string
 for letter in 'my_string':
     print(letter)

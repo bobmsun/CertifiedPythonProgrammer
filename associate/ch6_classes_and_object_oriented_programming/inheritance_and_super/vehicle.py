@@ -1,8 +1,11 @@
 
 
+# Inheritance allows us to define a type and then we can define a more specific type that shares functionality that parent type. 
+# So we base a type off an existing type so that we don't have to redo that work and define those things additionally.
+
 class Vehicle:
     """
-    Vehicle is a type that describes a machine that helpes us travel.
+    Vehicle is a type that describes a machine that helpes us travel. (This is a docstring)
     """
 
     class_variable = "Keith"

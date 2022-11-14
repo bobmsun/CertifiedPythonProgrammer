@@ -1,5 +1,5 @@
 
-# Object: an entity that encapsulate some data and some functionality
+# Object: an entity that encompassing some data and some functionality
 # 目前为止见过最多的 object: string type (str)
 
 my_str = "Test String"

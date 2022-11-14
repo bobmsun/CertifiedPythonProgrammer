@@ -1,0 +1,43 @@
+
+Objects is that they are entities encompassing data and functionality. These two things married together makes an object.
+Let's take a look at the built-in types we've been using to look at the data and functionality encompassed by them. 
+
+$ python3.7
+Python 3.7.6 (default, Jan 30 2020, 15:46:02)
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> my_str = "Test String"
+
+>>> dir(my_str)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattr
+ibute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '_
+_len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rm
+ul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode',
+'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit'
+, 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstri
+p', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitline
+s', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+
+
+The dir function returns a list of all of the variables and functions that the object encompasses. 
+We can chain any of these items off of our object and it will return a value. That value might be a method.
+
+>>> my_str.__doc__
+"str(object='') -> str\nstr(bytes_or_buffer[, encoding[, errors]]) -> str\n\nCreate a new string object from the given object. If encoding or\nerrors is specified, then the object must expose a data buffer\nthat will be decoded using the given encoding and error handler.\nOtherwise, returns the result of object.__str__() (if defined)\nor repr(object).\nencoding defaults to sys.getdefaultencoding().\nerrors defaults to 'strict'."
+
+(This is a docstring, a triple-quoted multi-line string inside the str type)
+
+
+>>> my_str.isdigit
+<built-in method isdigit of str object at 0x7f7fc84c11f0>
+
+>>> my_str.isdigit()
+False
+
+
+Everything in python is an object. 
+Modules 也是 Object
+
+import sys
+type(sys)       # 会打印 <class 'module'>
+type("my_string")        # 会打印 <class 'str'>
