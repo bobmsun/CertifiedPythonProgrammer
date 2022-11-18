@@ -8,7 +8,7 @@ class Boat(Vehicle):
     # If there aren't any, then this will just be an empty dictionary
     def __init__(self, boat_type='sail', distance_traveled=0, unit='miles', **kwargs): # so now you can pass infinitely number of keyword arguments
         # print("boat constructor")
-        super().__init__(distance_traveled=distance_traveled, unit=unit)
+        super().__init__(distance_traveled=distance_traveled, unit=unit, **kwargs)     # 这里也最好加上 **kwargs
         self.boat_type = boat_type
     
     def voyage(self, distance):

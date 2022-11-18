@@ -4,7 +4,10 @@ class Vehicle:
     Vehicle is a type that describes a machine that helpes us travel. (This is a docstring)
     """
 
-    def __init__(self, distance_traveled=0, unit='miles'): 
+    def __init__(self, distance_traveled=0, unit='miles', **kwargs):    # **kwargs : this allows us to be a little more safe because now 
+                                                                        # you can effectively pass infinite number of keyword arguments 
+                                                                        # to the initialization function for Vehicle, Car, Boat 
+                                                                        # and you can just ignore the ones that doesn't use
         # print("vehicle constructor")
         self.distance_traveled = distance_traveled
         self.unit = unit
