@@ -1,6 +1,8 @@
 from boat import Boat
 from car import Car
 
+# Multiple inheritence is not something you can use very often
+
 # When you are creating class, you should use CamelCase instead of snake_case
 class AmphibiousVehicle(Car, Boat):
     # pass
@@ -20,8 +22,8 @@ class AmphibiousVehicle(Car, Boat):
         self.boat_type = 'motor'
     
     def travel(self, land_distance=0, water_distance=0):
-        super().voyage(water_distance)
-        super().drive(land_distance)
+        self.voyage(water_distance)
+        self.drive(land_distance)
 
 
 # python -i amphibious_vehicle.py

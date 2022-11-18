@@ -12,9 +12,11 @@ class AmphibiousVehicle(Car, Boat):
         super().voyage(water_distance)
         super().drive(land_distance)
 
+        # super() is useful when we are customizing a method that is already created by one of our parent classes and we need to use the 
+        # original implementation in our new customized implementation
 
-# python -i amphibious_vehicle2.py
-# >>> AmphibiousVehicle.__mro__
-# (<class '__main__.AmphibiousVehicle'>, <class 'car2.Car'>, <class 'boat2.Boat'>, <class 'vehicle2.Vehicle'>, <class 'object'>)
+        # Because we inherit from Car and Boat, so our AmphibiousVehicle instances have voyage and drive just by themselves
+        self.voyage(water_distance)
+        self.drive(land_distance)
 
 
