@@ -6,3 +6,11 @@ def create_var():
 create_var()
 
 print(a)
+
+
+a_tuple = (1, 2)
+def change_tuple(a_tuple):
+    a_tuple = (1, 2, 3)
+
+change_tuple(a_tuple)
+print(a_tuple)

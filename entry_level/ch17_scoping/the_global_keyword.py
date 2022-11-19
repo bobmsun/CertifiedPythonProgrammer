@@ -1,6 +1,6 @@
 
 # 即使我们刚刚学习了 name hiding (shadowing), it doesn't mean that we always want our variables to be local to a function
-# Occasionally we want  to be able to call a function and it changes some global state
+# Occasionally we want to be able to call a function and it changes some global state
 # 这是我们可以用 "global" keyword that will allow us to do that, but it has some limitations
 
 
@@ -24,7 +24,7 @@ y = 5
 def set_x2(z):
     x = z
     global y     # That means, I have the access to the y variable for the rest of the function that is going to be whatever the global context is
-    global a     # and if it doesn't exist yet then we can creat it. That's what's going on the "global a"
+    global a     # and if it doesn't exist yet then we can create it. That's what's going on the "global a"
                  # We can create global varible from inside the function. This is probably the more useful case of using the "global" keyword
     y = x
     a = 7
@@ -44,6 +44,13 @@ print("a after set_x", a)          # a after set_x 7
 # print(aa)      # NameError: name 'aa' is not defined
 
 
+# def create_var2():
+#     global aa 
+#     aa = 'hello'
+
+# create_var2()
+# print(aa)      # 可以 print 出 hello
+
 
 # 例 3.1
 y2 = 11
@@ -55,6 +62,20 @@ set_x3()
 # Inside set_x3 x: 11
 # Inside set_x3 y2: 11
 
+# （自己加，作为对例 3.1 的补充）例 3.1.1
+y2_2 = 15
+def set_x3_2(y2_2):
+    x = y2_2
+    print("Inside set_x3_2 x:", x)
+    print("Inside set_x3_2 y2:", y2)   
+    print("Inside set_x3_2 y2_2:", y2_2)             
+set_x3_2(20)
+# Inside set_x3_2 x: 20
+# Inside set_x3_2 y2: 11
+# Inside set_x3_2 y2_2: 20
+
+
+
 # 例 3.2
 # 但是一旦加上这样一句，就会报错
 y3 = 77
@@ -65,7 +86,8 @@ def set_x4():
     y3 = 99         # 只要加上这句就会报错，但报错的地方在上面👆
 set_x4()
 
-# 启示：if we are just using y (例3.1)，是可以的；在外面定义的 y can be used in this more localized setting
+# 启示：if we are just using y (例3.1)，是可以的；在外面定义的 y can be used in this more localized setting  
+# （自悟：这点的前提是 parameter 中不能有重名的 y，否则会 name mangling，上一讲讲的，也就是例 3.1.1）
 # 但如果像 例 3.2 中，如果我们加入了 assignment，it's not going to change something higher
 # because we are assigning y 在下面，it's assuming that y is suppose to be local
 # 这就是为什么会在上面报 Error 说，UnboundLocalError: local variable 'y3' referenced before assignment

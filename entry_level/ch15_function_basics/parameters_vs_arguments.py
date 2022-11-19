@@ -39,7 +39,8 @@ print( can_drive(16, driving_age=18) )     # False    If you have a very long li
 
 print( can_drive(16, 18) )          # False
 
-
+# 自己加
+print( can_drive(driving_age=22) )       # TypeError: can_drive() missing 1 required positional argument: 'age'
 
 # def can_drive(age, driving_age=16, vehicle_type):
 #     pass
