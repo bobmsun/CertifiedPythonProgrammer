@@ -25,6 +25,10 @@ print( sys.stderr.write("ERROR\n") )
 
 lines = sys.stdin.readlines()
 print(lines)
+# Hello
+# bob
+# !
+# ['Hello\n', 'bob\n', '!\n']
 
 # 需要按 control + D 去结束 stdin
 

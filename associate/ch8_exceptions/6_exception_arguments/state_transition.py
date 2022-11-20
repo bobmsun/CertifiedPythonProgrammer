@@ -28,3 +28,6 @@ if __name__ == "__main__":
         print(f"Desired state {err.next}")
         print(err.message)
 
+# Previous State loading
+# Desired state cancelled
+# unable to transition from loading to cancelled

@@ -15,8 +15,14 @@ print( ages.items() )        # a list of tuples            dict_items([('kevin',
 print( list(ages.items()) )    # [('kevin', 61), ('bob', 79)]
 
 
+# 自己加：items() 函数多数是在 iterate 一个 dictionary 时用的；iterate 一个 dictionary 中的所有 key-value pair
+for key, value in ages.items():
+        print("{} is {}".format(key, value))
+
+
 # 自己加：直接用 for loop go over 一个 dict，go over 的是 key
 for i in ages:
     print(i)
 # kevin
 # bob
+

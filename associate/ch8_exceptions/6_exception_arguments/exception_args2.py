@@ -13,3 +13,6 @@ except ExampleError as err:
     print(message)            # this is a message
     print(x + y)              # 3
     print(other)              # ['boom']
+
+
+# Exceptions are just classes
