@@ -3,7 +3,7 @@
 # 有一些 collection functions 是之前讲过的: reversed, sorted 
 # 也有一些是新的：map, filter, and reduce
 
-# All these functions are kind of special, because they're what are known as "higher order functio": a function
+# All these functions are kind of special, because they're what are known as "higher order function": a function
 # that can take in another function as an argument or return a function as a return value
 # 目前先不管 functions that return a function
 
@@ -106,7 +106,7 @@ print(words)     # ['Alfrad', 'Boss', 'Daemon', 'a', 'dig', 'fig']
 # Remember, 对于一个 function 来说，if you 不加括号（不 call）, it will always represent itself
 # In Python, you are able to pass functions around as objects.
 
-# 下面的例子 is：not working with lambda but working with the "key" paramter
+# 下面的例子 is：not working with lambda but still working with the "key" paramter
 words.sort(key=str.lower, reverse=True)    # we will throw our string into the function
                                            # reverse=True will reverse the order， kind of combining sorted and reverse
 
