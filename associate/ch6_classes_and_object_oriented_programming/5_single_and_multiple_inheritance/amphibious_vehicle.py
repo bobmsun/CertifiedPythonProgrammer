@@ -10,7 +10,7 @@ class AmphibiousVehicle(Car, Boat):
     # 会出 error：TypeError: __init__() missing 1 required positional argument: 'engine'
     # 这里有一个 Method (class) Resolution Order 的概念: the order we go about actual calling function
     # Method (class) Resolution Order: the order we go about actual calling function
-    # If AmphibiousVehicle doesn't define it, it's gonna check car
+    # If AmphibiousVehicle doesn't define it, it's gonna check Car
     # If Car doesn't define it, it's gonna check Boat
     # If Boat doesn't define it, it's gonna check what they inherit from, in this case both Car and Boat are Vehicle
     # If Vehicle doesn't have it, it's gonna check what Vehicle inherit from. It's gonna be Object.

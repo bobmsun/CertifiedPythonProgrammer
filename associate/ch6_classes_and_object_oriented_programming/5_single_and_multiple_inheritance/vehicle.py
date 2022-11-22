@@ -4,7 +4,8 @@ class Vehicle:
     Vehicle is a type that describes a machine that helpes us travel. (This is a docstring)
     """
 
-    def __init__(self, distance_traveled=0, unit='miles'):   # model Vehicle 时，这里的 attribute 应给 vehicle-independent, should work across different types of vehicle
+    def __init__(self, distance_traveled=0, unit='miles'):   # model Vehicle 时，这里的 attribute 应该 vehicle-independent, should work across different types of vehicle
+        # print("vehicle constructor")
         self.distance_traveled = distance_traveled
         self.unit = unit
 

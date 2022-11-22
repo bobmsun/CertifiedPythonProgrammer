@@ -5,7 +5,7 @@ from car2 import Car
 class AmphibiousVehicle(Car, Boat):
     
     def __init__(self, engine, tires=[], distance_traveled=0, unit='miles'):
-        super().__init__(engine=engine, tires=tires, distance_traveled=distance_traveled, unit=unit)
+        super().__init__(engine=engine, tires=tires, distance_traveled=distance_traveled, unit=unit)      # 相比 AmphibiousVehilce，改动是，这里用了 keyword argument
         self.boat_type = 'motor'
     
     def travel(self, land_distance=0, water_distance=0):

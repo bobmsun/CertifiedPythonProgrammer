@@ -5,7 +5,7 @@ class Boat(Vehicle):
 
     def __init__(self, boat_type='sail', distance_traveled=0, unit='miles'):
         # print("boat constructor")
-        super().__init__(distance_traveled=distance_traveled, unit=unit)
+        super().__init__(distance_traveled=distance_traveled, unit=unit)        # 相比 boat.py，改动是 这里用了 keywork argument
         self.boat_type = boat_type
     
     def voyage(self, distance):

@@ -9,7 +9,7 @@ class Car(Vehicle):
 
     def __init__(self, engine, tires=None, distance_traveled=0, unit='miles'):
         # print("car constructor")
-        super().__init__(distance_traveled=distance_traveled, unit=unit)
+        super().__init__(distance_traveled=distance_traveled, unit=unit)         # 相比 car.py 改动是这里用了 keywork argument
         if not tires:
             tires = [self.default_tire, self.default_tire, self.default_tire, self.default_tire]
         self.tires = tires
