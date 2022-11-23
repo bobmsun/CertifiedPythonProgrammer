@@ -16,7 +16,7 @@ class Mapping:
         for item in iterable:
             self.item_list.append(item)
     
-    __update = update         # Create a class-level variable that starts with 2 understore. 
+    __update = update         # Create a class-level variable that starts with 2 understores. 
                               # This is a private copy of the original update method.
 
 

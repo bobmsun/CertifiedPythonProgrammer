@@ -13,7 +13,7 @@ class Mapping:
     
 
 class MappingSubclass(Mapping):
-    def update(self, keys, values):
+    def update(self, keys, values):          # 注意：这里的 subclass 中 override 了 update，但却没有 override __init__
         print("update in subclass")
         for item in zip(keys, values):
             self.item_list.append(item)
