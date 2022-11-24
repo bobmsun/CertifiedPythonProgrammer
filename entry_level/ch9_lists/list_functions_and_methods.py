@@ -69,14 +69,16 @@ print(id(my_list))      # 和上面的 id 相同
 
 
 
+my_list = [1, 3, 4, 8, 2]
 # reverse a list
 print(reversed(my_list))      # it will return a reverse iterator object, so we have to convert it to a list
 # The reversed function doesn't return a list, but typecasting works for the list type also, and when we have a list iterator we can turn it back into a list using the list function:
 print( list(reversed(my_list)) )     # [2, 8, 4, 3, 1]
 
+print(my_list)     # [1, 3, 4, 8, 2]           # reversed 不是 inplaced 的，就像 sorted 也不是 inplaced 的
 
 # 结合上面所学，sort in descending order
-print( list(reversed(sorted(my_list))) )
+print( list(reversed(sorted(my_list))) )       # [8, 4, 3, 2, 1]
 
 
 # To use "sorted" and "reversed", these are functions that require the internal items to be comparable. 
@@ -87,9 +89,9 @@ print( list(reversed(sorted(my_list))) )
 # 法一：用 remove function
 names = ['Alice', 'Bob', 'Lance', 'Mike']
 names.remove('Bob')
-print(names)             # ['Alice', 'Lance', 'Mike']
+print(names)             # ['Alice', 'Lance', 'Mike']       # 自悟：remove 函数是 inplace 的
 
-# 如果有多个元素，remove 函数之后remove first occurance 
+# 如果有多个元素，remove 函数只会 remove first occurance 
 numbers = [1, 2, 3, 3, 2]
 numbers.remove(2)
 print(numbers)           # [1, 3, 3, 2]
@@ -98,3 +100,15 @@ print(numbers)           # [1, 3, 3, 2]
 names = ['Alice', 'Bob', 'Lance', 'Mike']
 names[1:2] = []
 print(names)             # ['Alice', 'Lance', 'Mike']
+
+
+
+
+
+
+# 自己根据之后模拟考试，加的 join 函数：
+names = ['Alice', 'Bob', 'Hillary', 'Elizabeth']
+print( ' '.join(names) )     # Alice Bob Hillary Elizabeth
+
+numbers = [1, 2, 3, 3, 2]
+print( ' '.join(numbers) )    # TypeError: sequence item 0: expected str instance, int found
