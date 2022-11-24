@@ -5,7 +5,7 @@ class Mapping:
         self.__update(iterable)
     
     def update(self, iterable):
-        print("original update")
+        print("original update in mapping3.py")
         for item in iterable:
             self.item_list.append(item)
     
@@ -29,7 +29,7 @@ class MappingSubclass(Mapping):
 # python -i mapping3.py 
 
 # >>> mapping = MappingSubclass([])
-# original update
+# original update in mapping3.py
 
 # >>> Mapping.__update
 # AttributeError: type object 'Mapping' has no attribute '__update'

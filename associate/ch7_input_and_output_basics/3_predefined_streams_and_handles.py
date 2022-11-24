@@ -6,14 +6,13 @@
 # They are all accessible to us through the sys module in python
 
 import sys
-from tkinter import READABLE
 # sys module 有很多东西可以用，we use sys.exit planty of times
 
-# sys.stdin - READABLE, take something from the user
+# sys.stdin - readable, take something from the user
 # sys.stdout & sys.stderr    - writable, write to / print something
 # stdin, stdout, stderr 都是 one-way stream，要么读，要么写，they don't do the opposite
 
-print(sys.stdout.write("Testing\n"))
+print( sys.stdout.write("Testing\n") )
 # Testing
 # 8
 # it wil also print out the length of the stream

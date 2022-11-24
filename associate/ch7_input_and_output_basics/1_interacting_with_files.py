@@ -84,7 +84,7 @@ my_file.close()
 
 
 
-# the curse position is very important 
+# the cursor position is very important 
 my_file = open('xmen.txt', 'w+')
 
 my_file.write('Beast\n')
@@ -162,7 +162,7 @@ my_file = open('xmen.txt', 'r')
 with my_file:
     print(my_file.read())
     my_file.seek(0)
-    for line in my_file.readlines():
+    for line in my_file.readlines():            # 自我总结：有 readlines() 和  writelines()
         print(line)
     # each of the line has a newline character at the end of it
     # and print() will add another new line character

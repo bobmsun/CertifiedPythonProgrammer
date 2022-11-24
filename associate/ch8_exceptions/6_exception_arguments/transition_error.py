@@ -1,8 +1,8 @@
 
 # Occassionally, you want to write exception types that hold on the some additional information and you want to be able to
-# access that when you handling the exception. So for that, we can use exception argument.
+# access that when you are handling the exception. So for that, we can use exception argument.
 
-# Exception is just classes. So if you want it ot have some argument, we just have to customize init
+# Exception is just classes. So if you want it to have some argument, we just have to customize init
 
 class TransitionError(Exception):
     def __init__(self, previous, next_state, message):
