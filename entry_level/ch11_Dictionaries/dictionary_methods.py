@@ -26,3 +26,13 @@ for i in ages:
 # kevin
 # bob
 
+
+
+
+# 自己加（根据模拟考试加的）：[] 和 get 函数；如果key不存在，get 函数会返回 None，但是[] 会出 error
+
+print(ages["kevin"])            # 61
+print(ages.get("kevin"))        # 61
+
+print(ages.get("hello"))        # None
+print(ages["hello"])            # KeyError: 'hello'
