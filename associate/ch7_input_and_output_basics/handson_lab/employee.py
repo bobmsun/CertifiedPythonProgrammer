@@ -4,7 +4,7 @@ class Employee:
     default_db_file = "employee_file.txt"
 
     @classmethod
-    def get_all(cls, file_name=None):
+    def get_all(cls, file_name=None):   # the first variable of the class variable is going to be the class itself
         results = []
 
         if not file_name:
@@ -19,12 +19,13 @@ class Employee:
 
             # Below we are using list comprehension
             lines = [
-                line.split(',') + [index + 1]
+                # also strip out the newline caharacter at the end
+                line.strip("\n").split(',') + [index + 1]
                 for index, line in enumerate(f.readlines())     # the enumerate function is going to return a tuple to us which will give us the actual index and the item itself
             ]
         
         # print(lines)
-        # [['Kevin Bacon', 'kbacon@example.com', 'CEO', '555-867-5309\n', 1], ['Bruce Wayne', 'bwayne@example.com', 'President', '\n', 2]]
+        # [['Kevin Bacon', 'kbacon@example.com', 'CEO', '555-867-5309', 1], ['Bruce Wayne', 'bwayne@example.com', 'President', '', 2]]
         
         for line in lines:
             results.append(cls(*line))   # We use the class initializer here
@@ -40,12 +41,54 @@ class Employee:
         
         return results
 
+    @classmethod
+    def get_at_line(cls, line_number, file_name=None):
+        if not file_name:
+            file_name = cls.default_db_file
+        
+        with open(file_name, 'r') as f:
+            # readlines() is going to be a list, it's gonna have zero as the starting index,
+            # but line_number starts at 1, so we need to adjust for that.
+            line = f.readlines()[line_number - 1]
+            attrs = line.strip("\n").split(',') + [line_number]
+            return cls(*attrs)
+
+    
+    # implement the "save" instance method
+    def save(self, file_name=None):
+        if not file_name:
+            file_name = self.default_db_file
+        
+        with open(file_name, 'r+') as f:
+            lines = f.readlines()
+            if self.identifier:
+                # Update a line:
+                lines[self.identifier - 1] = self._database_line()
+            else:
+                # add a line
+                lines.append(self._database_line())
+            f.seek(0)
+            f.writelines(lines)
+    
+    # put a _, because this isn't something we expect any other user of our class to use,
+    # we want it to be internal to us. putting a _ 之后，it will not be exposed if someone
+    # goes import *. This is something people shouldn't think of it as part of public interface.
+    def _database_line(self):
+        return (
+            ",".join(
+                [self.name, self.email_address, self.title, self.phone_number or ""]  # if the phone_number is None, then it's gonna be ""
+            )
+            + "\n"
+        )
+
+
     def __init__(self, name, email_address, title, phone_number=None, identifier=None):
         self.name = name
         self.email_address = email_address
         self.title = title
         self.phone_number = phone_number
-        self.identifer = identifier
+        self.identifier = identifier
+    
     
     def email_signature(self, include_phone=False):
         signature = f"{self.name} - {self.title}\n{self.email_address}"

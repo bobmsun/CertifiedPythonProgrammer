@@ -32,9 +32,13 @@ president = employees[1]
 president.phone_number = "555-555-5555"
 president.save(file_name)
 
-new_president = Employee.get_at_line(president.identifer, file_name)
+new_president = Employee.get_at_line(president.identifier, file_name)
 
 assert (
     new_president.phone_number == "555-555-5555"
 ), f"Expected phone number to be 555-555-5555, but got {new_president.phone_number}"
 
+
+last_employee = Employee.get_all(file_name)[2]
+last_employee.title = "b"
+last_employee.save(file_name)
