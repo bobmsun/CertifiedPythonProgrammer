@@ -24,6 +24,11 @@ setup(
  
 # pip3.7 install --user ~/packages/words/dist/words-1.0.0-py3-none-any.whl   
 # （with that build, 这里我们就可以 install package了, 这里的 path 是教程中用到 老师的 绝对 path）
+# 这步完成之后，words-1.0.0-py3-none-any.whl 就被 copy 到了 /Users/shihaosun/anaconda3/lib/python3.7/site-packages 下
 
 
+# 视频里没有：
+# 以上步骤完成之后还有把 src 下面的 整个 words 文件夹（包含了source code）copy 到
+# /Users/shihaosun/anaconda3/lib/python3.7/site-packages
+# 完成之后，才可以成功 import words package
 
