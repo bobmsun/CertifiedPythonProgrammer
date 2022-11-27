@@ -1,0 +1,26 @@
+# Modules are the main ways we share code in python, but modules are very rarely shared directly.
+# Most of the time, modules are gonna be part of the package that can be installed by someone else.
+# And then they will have access to modules.
+
+# In this handson lab, we will be creating an installable package that contains modules and expose
+# some of the functions directly through the package itself.
+
+# How to create and use packages. And how to create a setup.py so that you can make it an
+# installable package.
+
+
+
+
+
+# 视频中用到的 command：
+# mkdir -p
+# With the help of mkdir -p command you can create sub-directories of a directory. 
+# It will create parent directory first, if it doesn't exist. 
+# But if it already exists, then it will not print an error message and will move further to create sub-directories.
+
+# mkdir -p ./packages/words/src/words
+# touch ./packages/words/src/words/generator.py
+# touch ./packages/words/setup.py
+# touch ./packages/words/src/words/__init__.py
+
+

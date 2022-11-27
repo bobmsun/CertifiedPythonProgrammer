@@ -42,3 +42,15 @@ print( "Hello, my name is {0}, and I really enjoy {1}. Have a nice day! - {0}".f
 
 # 自我补充：另一种 format string 的 方式是 f string
 # .format()  还可以 format 显示几位小数
+
+
+
+# handson lab 补充：
+a_test_str = '    a  b  c     '
+a_test_str.strip()
+print(a_test_str)        #     a  b  c       已在证明 strip 不改变原 string，而是生成新 string
+
+print(a_test_str.strip())      # a  b  c
+
+a_test_str = '\n    a  b  c     \n'
+print(a_test_str.strip('\n'))    #     a  b  c     
