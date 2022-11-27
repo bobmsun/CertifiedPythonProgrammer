@@ -5,7 +5,7 @@ from random import sample
 # with open("/usr/share/dict/words", "r") as f:
     # WORD_LIST = [w.strip("\n") for w in f.readlines()]
 
-WORD_LIST = ['Hello', 'Bob', 'You', 'Are', 'The', 'Best']
+WORD_LIST = ['Hello', 'Bob', 'You', 'Are', 'The', 'Best', '!']
 
 def random_word():
     return random_words(1)[0]
