@@ -31,6 +31,8 @@ print(my_list.index(2))       # 1
 my_list = [1, 2, 3, 2, 2]
 print(my_list.index(2))      # 1
 
+# string 也有 index() function；
+# string 还有 find() 和 rfind() function，但是 list 没有
 
 
 

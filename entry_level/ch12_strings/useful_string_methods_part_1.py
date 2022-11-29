@@ -31,14 +31,14 @@ print( my_str.istitle() )    # False      check if it is title-cased
 
 print( my_str.title().istitle() )      # True
 
-print(" ".isspace() )         # True 
+print( " ".isspace() )         # True 
 print( "f".isspace() )        # False       if there is any kind of character, then return false
 
 
 # isdecimal, isdigit, isnumeric
 print( "1.0".isdecimal() )     # False    return Fase
 print( "1".isdecimal() )       # True    check if it's a decimal notation, which basically means if it is a whole number, cannot contain '.'
-print("a".isdecimal())       # False
+print( "a".isdecimal())       # False
 
 print("1".isdigit())         # True
 print("11".isdigit())        # True

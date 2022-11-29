@@ -14,3 +14,20 @@ def change_tuple(a_tuple):
 
 change_tuple(a_tuple)
 print(a_tuple)
+
+s1 = "aaa"
+s2 = "aaa"
+s3 = s1[:]
+
+print(id(s1))
+print(id(s2))
+print(id(s3))
+print(s1 == s2)
+print(s1 == s3)
+
+l1 = ['a']
+l2 = []
+
+print(id(l1))
+print(id(l2))
+print(l1 == l2)

@@ -11,6 +11,14 @@ Trigonometry:
 sin, cos, tan, and hypot
 Trigonometric math is handy (computers render a lot of triangles). A large chunk of the math module consists of trig functions.
 
+自己加：
+The math.hypot() method returns the Euclidean norm. The Euclidian norm is the distance from the origin to the coordinates given.
+Prior Python 3.8, this method was used only to find the hypotenuse of a right-angled triangle: sqrt(x*x + y*y).
+From Python 3.8, this method is used to calculate the Euclidean norm as well. For n-dimensional cases, the coordinates passed are assumed to be like (x1, x2, x3, ..., xn). So Euclidean length from the origin is calculated by sqrt(x1*x1 + x2*x2 +x3*x3 .... xn*xn).
+
+
+
+
 Rounding:
 floor, ceil, and trunc
 When the standard round function doesn't quite do what you need it to, you can use floor, ceil, or trunc.
@@ -31,7 +39,7 @@ The random module:
 3. Choice, Sample, and Shuffle
     Three of the most used randomness functions are choice, sample, and shuffle.
     choice: choice is going to take some sort of sequence and it's going to return you one element from the sequence at random
-    sample: sample is gonna take a sequence and a length that you want. And it's gonna return you another sequence of the that length that contains
+    sample: sample is gonna take a sequence and a length that you want. And it's gonna return you another sequence of that length that contains
             random elements from the parent. Basically, you can take a subsection at random. (take a sample from it)
     shuffle: shuffle is going to randomize in place the thing you give it. So shuffle only works on mutable data type. So cannot use shuffle on a tuple.
 
