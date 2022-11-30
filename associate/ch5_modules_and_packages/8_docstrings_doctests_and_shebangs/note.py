@@ -1,7 +1,7 @@
 """
 Helpers is a package that provides easy to use helper functions and variables.
 
-This is a docstring. It's NOT a doc comment. This is not a comment becaues the interpreter actually has to do something with it.
+This is a docstring. It's NOT a doc comment. This is not a comment because the interpreter actually has to do something with it.
 
 Docstrings are triple-quoted strings that we put at the top of modules, packages, inside of functions, or inside of class.
 """

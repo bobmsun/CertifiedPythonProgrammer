@@ -18,3 +18,15 @@ print(f"Uppercase Letters: {extract_upper(extras2.name)}")
 # Lowercase Letters: ['e', 'i', 't', 'h', 'h', 'o', 'm', 'p', 's', 'o', 'n']
 # Uppercase Letters: ['K', 'T']
 
+
+
+# 自己加（网上查）：
+# __name__ is a built-in variable which evaluates to the name of the current module. 
+# Thus it can be used to check whether the current script is being run on its own or being imported somewhere else by combining it with if statement, as shown below.
+
+# print ("File1 __name__ = %s" %__name__) 
+  
+# if __name__ == "__main__": 
+#     print ("File1 is being run directly")
+# else: 
+#     print ("File1 is being imported")

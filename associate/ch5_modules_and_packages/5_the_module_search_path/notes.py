@@ -20,7 +20,7 @@ import sys
 print(sys.path)
 
 
-['/Users/shihaosun/Developer/CertifiedPythonProgrammer/associate/ch5_modules_and_packages/the_module_search_path',   # current directory, here is where helpers come from
+['/Users/shihaosun/Developer/CertifiedPythonProgrammer/associate/ch5_modules_and_packages/5_the_module_search_path',   # current directory, here is where helpers come from
  '/Users/shihaosun/anaconda3/lib/python37.zip', 
  '/Users/shihaosun/anaconda3/lib/python3.7',                     # Python standard library 从这里来
  '/Users/shihaosun/anaconda3/lib/python3.7/lib-dynload', 

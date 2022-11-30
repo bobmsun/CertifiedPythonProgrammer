@@ -15,7 +15,10 @@ print(f"Uppercase Letters: {extract_upper(extras3.name)}")
 # If you want to run a module, not a file, you can use the -m flag
 # python -m helpers3     (注意：这里需要用 module name 而不是 file name，所以 没有 .py)
 # 会 print out "HELLO FROM HELPERS"
-# There might be things in the standard library that you might import that actually have a scriptable portion to them
+# There might be things in the standard library that you might import that actually have a scriptable portion to them.
+# 自己又试了一下：
+# python -i helpers3.py
+# 也会 print 出 HELLO FROM HELPERS
 
 
 # But just to recap what we covered here,

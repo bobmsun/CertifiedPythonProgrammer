@@ -18,3 +18,9 @@ def extract_lower(phrase):
 # Anything we can give a name is something that can then be pulled in by something accessing this module. 
 # Functions have name. Other things that have name are variables.
 
+
+
+# 自己补充（网上查的）
+# In Python, Modules are simply files with the “. py” extension containing Python code that can be imported inside another Python Program. 
+# In simple terms, we can consider a module to be the same as a code library or a file that contains a set of functions that 
+# you want to include in your application.

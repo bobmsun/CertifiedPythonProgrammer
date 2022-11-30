@@ -1,5 +1,6 @@
 
-# If the module name is gonna conflict with variable name, then we can change the module name while we are importing it by doing import XXX as YYY
+# If the module name is gonna conflict with variable name, then we can change the module name while we are importing it 
+# by doing import XXX as YYY
 import helpers as h
 
 name = "Keith Thompson"
