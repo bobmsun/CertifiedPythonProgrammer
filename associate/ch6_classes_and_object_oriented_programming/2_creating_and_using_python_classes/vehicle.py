@@ -31,7 +31,7 @@ class Vehicle:
 # civic                            # <__main__.Vehicle object at 0x7fe42b3bef28>
 # type(civic)                      # <class '__main__.Vehicle'>
 # civic.engine                     # '4-cyclinder'
-# civic.tires
+# civic.tires                      # ['front-deriver', 'front-passenger', 'rear-driver', 'rear-passenger']
 # civic.description                # <bound method Vehicle.description of <__main__.Vehicle object at 0x7fe42b3bef28>>
 # civic.description()
 # civic.serial_number = '1234'     # it has engine and tires, you can also attach more things

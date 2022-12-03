@@ -78,3 +78,8 @@ class Vehicle:
 # So those are the various things that we can do
 # when we're defining methods inside of a class.
 
+# 根据以上，自我总结：
+# python 中有 3 中 method：
+# instance method: first implicit method: self, call 的时候 instace_name.fucntion_name()
+# class method: annotate with @classmethod, first implicit method: cls, call 的时候 class_name.function_name()
+# static method: annotate with @staticmethod, no first implicit method, just a function attached to the object
