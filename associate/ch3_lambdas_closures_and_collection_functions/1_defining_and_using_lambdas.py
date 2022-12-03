@@ -19,7 +19,7 @@ lambda num: num * num     # (lambda 有 implict return）    The result of the e
 
 # 以上两个 是 equivalent 的
 
-# In fact, lambda can actually be named to variables, we can assigned it to a variable 
+# In fact, lambda can actually be named to variables, we can assign it to a variable 
 square_lambda = lambda num: num * num
 
 # assert is just to verify the thing is true

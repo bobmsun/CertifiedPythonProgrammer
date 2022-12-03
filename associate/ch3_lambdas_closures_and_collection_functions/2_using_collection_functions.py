@@ -18,7 +18,7 @@ domain = [1, 2, 3, 4, 5]
 # 当我们 pass 一个 function 给 map function 时，it's gonna be the function without calling it. So 这时我们就可以用 lambda
 our_range = map(lambda num: num * 2, domain)
 print(list(our_range))     # [2, 4, 6, 8]  # need to conver our_range into a list, otherwise it's a map object
-print(our_range)         # <map object at 0x7fd2d72546a0>
+print(our_range)           # <map object at 0x7fd2d72546a0>
 # 对于 map function 来说，the result is always going to have the same length as the input
 
 # map allows us to do something that 可能需要 a for loop （or you can use list comprehension)
@@ -37,7 +37,7 @@ print(list(our_range_square))       # [1, 4, 9, 16, 25]
 
 
 # filter
-# filter(first parament is a callable(a funtion), for second parameter it asks for a iterable)
+# filter(first parament is a callable [a funtion], for second parameter it asks for a iterable)
 evens = filter(lambda num: num % 2 == 0, domain)
 # for filter function, the lambda needs to return a true/false value. If the value is true, then the particular item that we are currently working with 
 # as we are iterating our list is going to be kept and put into the final list that gonna be returned back to us.
@@ -85,7 +85,7 @@ print(a_string)           # abcd
 words = ['Boss', 'a', 'Alfrad', 'fig', 'Daemon', 'dig']
 print("Sorting by default") 
 print(sorted(words))   # ['Alfrad', 'Boss', 'Daemon', 'a', 'dig', 'fig']
-# 用 sorted function 来 sort a list of string 不能把list sorted alphebatically, because capital values and lower case values have different ordinal values,
+# 用 sorted function 来 sort a list of string 不能把 list sorted alphebatically, because capital values and lower case values have different ordinal values,
 # they compared differently
 
 
@@ -121,7 +121,7 @@ print(words)       # ['fig', 'dig', 'Daemon', 'Boss', 'Alfrad', 'a']
 
 
 # sort vs sorted 的区别
-# sorted([a list])   vs     [a list].sort()
+# sorted([a list])     vs     [a list].sort()
 # sorted is going to create a new list and return it
 # sort is going to change the list that you're calling it on
 

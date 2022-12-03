@@ -8,5 +8,5 @@ print(f"Lowercase Letters: {extract_lower(variables.name)}")      # Lowercase Le
 print(f"Uppercase Letters: {extract_upper(variables.name)}")      # Uppercase Letters: ['K', 'T']
 
 
-print(f"From helpers: {helpers.strings.extract_lower(variables.name)})")
+print(f"From helpers: {helpers.strings.extract_lower(variables.name)})")      # From helpers: ['e', 'i', 't', 'h', 'h', 'o', 'm', 'p', 's', 'o', 'n'])
 

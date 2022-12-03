@@ -35,6 +35,7 @@ def extract_upper(phrase):
 # Shebang
 # python main.py      有点麻烦
 #!/usr/bin/env/ python
+
 # use
 # chmod +x main.py
 # to make our file executable
