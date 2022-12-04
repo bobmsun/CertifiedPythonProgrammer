@@ -10,12 +10,12 @@ my_string += "testing"
 print(my_string)        # This is a simple stringtesting
 
 
-# Variables: we can hold on contents tha we want to access later on
+# Variables: we can hold on contents that we want to access later on
 
 # In python, the type of variable is NOT strict
 my_string = 1
 
-# Variables in python is NOT statically type, they hold on to the type infomation
+# Variables in python is NOT statically typed, they hold on to the type infomation     ???? 少了一个 not？
 
 # Python variable naming: snake case
 # Use lower case letters and separated by understore

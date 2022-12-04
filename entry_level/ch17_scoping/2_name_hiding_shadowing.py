@@ -1,12 +1,12 @@
 
 # Functions creates their own scops
 
-y = 5
+y = 5     ####
 
 def set_x(y):
     print("Inner y:", y)
     x = y        # We know x is not accessible outside the function anyway
-    y = x        # Then we're gonna modifiy y to see what happen
+    y = x        # Then we're gonna modifiy y to see what happen (这里其实是想看看能不能 modify 函数外面 #### 行定义的 y)
     print("Inner y 2nd time:", y)
     y = 8
     print("Inner y 3rd time:", y)
@@ -30,7 +30,7 @@ print("Outer y:", y)
 
 
 
-# 自己加
+# 自己加：
 
 # 回忆之前 creating_and_using_generator 那节 的 自我 research
 a_num = 33

@@ -28,10 +28,13 @@ print(l1 == l3)   # False
 # == 也可以用来比 dictionary
 d1 = {'key1': 'value1', 'key2': 'value2'}
 d2 = {'key1': 'value1', 'key2': 'value2'}
+d3 = {'key2': 'value2', 'key1': 'value1'}     # 只是顺序反了一下
 
 print(id(d1))
-print(id(d2))     # different id as d1
-print(d1 == d2)   # True
+print(id(d2))       # different id as d1
+print(id(d3))       # different id
+print(d1 == d2)     # True
+print(d1 == d3)     # True （自悟：看来 dict 是无序的）
 
 
 # in / not in 不光可以用于 list，还可以用于 string
@@ -49,5 +52,4 @@ print('sed' in 'fsdagsag')   # False
 # returns the highest index (from the right) for the provided substring, 
 # whereas find() returns the index position of the element's first occurrence, i.e. the very first index.
 print('abcdefg'.rfind('def'))   # 3
-
 

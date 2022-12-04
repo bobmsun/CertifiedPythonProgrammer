@@ -14,10 +14,12 @@ except ArgumentError as err:
     sys.exit(1)
 
 
-# python 4_creating_custom_exception_types.py     
+# python 4_creating_custom_exception_types.py   
+# running cli.__init__.py  
 # Error: too few arguments
 
 # python 4_creating_custom_exception_types.py test
+# running cli.__init__.py
 # Name is test
 
 

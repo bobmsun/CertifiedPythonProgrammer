@@ -12,7 +12,7 @@ class StateMachine:
         self.state = state 
     
     def transition(self, new_state):
-        if new_state.lower() in self.allowed_transitions[self.state]:
+        if new_state.lower() in self.allowed_transitions[self.state]:    # 自己加：回忆OOP 那章讲的，class variable (allowed_tansition) 可以通过 class 来access，也可以通过 instance 来 acces
             self.state = new_state.lower()
         else:
             raise TransitionError(self.state, new_state, f"unable to transition from {self.state} to {new_state}")

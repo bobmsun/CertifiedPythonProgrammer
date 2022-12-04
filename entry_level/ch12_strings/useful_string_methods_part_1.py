@@ -31,7 +31,7 @@ print( my_str.istitle() )    # False      check if it is title-cased
 
 print( my_str.title().istitle() )      # True
 
-print( " ".isspace() )         # True 
+print( " ".isspace() )        # True 
 print( "f".isspace() )        # False       if there is any kind of character, then return false
 
 

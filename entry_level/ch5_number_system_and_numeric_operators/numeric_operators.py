@@ -3,7 +3,7 @@ print(2 + 2)     # 4
 
 print(2.0 + 2.0)   # 4.0
 
-print(2.0 + 2)    # 4.0     只有有一个是 float，结果就 return float
+print(2.0 + 2)    # 4.0     只要有一个是 float，结果就 return float
 
 print(3 * 9)     # 27
 

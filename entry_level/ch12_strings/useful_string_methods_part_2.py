@@ -14,7 +14,7 @@ print( user )
 
 print( url.split('/') )       # ['https:', '', 'example.com', 'users', 'jimmy']
 
-  
+
 print( ", ".join(words) )      # This, is, a, simple, phrase
 
 lines = ['First line', 'Second line', 'Third line']
@@ -26,7 +26,7 @@ print(output)
 
 
 
-# Sring formating
+# String formating
 
 template = "Hello, my name is {}, and I really enjoy {}, Have a nice day!"
 print( template.format('Keith', 'Python') )
@@ -48,9 +48,9 @@ print( "Hello, my name is {0}, and I really enjoy {1}. Have a nice day! - {0}".f
 # handson lab 补充：
 a_test_str = '    a  b  c     '
 a_test_str.strip()
-print(a_test_str)        #     a  b  c       已在证明 strip 不改变原 string，而是生成新 string
+print(a_test_str)        #     a  b  c       已在证明 strip 不改变原 string，而是生成新 string (当然不改变，因为string 是 immutable 的)
 
 print(a_test_str.strip())      # a  b  c
 
 a_test_str = '\n    a  b  c     \n'
-print(a_test_str.strip('\n'))    #     a  b  c     
+print(a_test_str.strip('\n'))    #     a  b  c

@@ -26,7 +26,7 @@ while a < 6:    # NameError: name 'a' is not defined
     print(a)
     a += 1
 
-# Functions and classes they define their own scope - that means a variable that create inside a function remain inside the function
+# Functions and classes they define their own scope - that means a variable that creates inside a function remains inside the function
 # 对于以上，we are not able to access a where a is only set inside the set_a() function
 
 

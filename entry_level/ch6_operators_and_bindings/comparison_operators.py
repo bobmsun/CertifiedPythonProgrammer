@@ -50,6 +50,7 @@ print( 1 is 1 )    # True
 # because there is no risk it's going to be changing.
 
 print( 1 is 1.0 )   # False, because there is two distinct object
+print( ['a'] is ['a'])    # False     自己加/悟：因为不是同一个 object
 
 print( 1.0 is 1.0 )  # True
 

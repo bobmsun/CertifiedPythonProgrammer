@@ -10,5 +10,5 @@ class TransitionError(Exception):
         self.next = next_state
         self.message = message
 
-# crete file using touch
-# touce transition_error.py
+# create file using touch
+# touch transition_error.py

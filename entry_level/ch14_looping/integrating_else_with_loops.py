@@ -51,4 +51,4 @@ for color in colors:
 else:
     print("Green is not in the list")
 
-# Orange is in the list
+# Green is in the list

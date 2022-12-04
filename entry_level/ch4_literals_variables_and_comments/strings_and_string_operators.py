@@ -9,7 +9,7 @@ multi-line stirng
 # '\nthis is a triple quoted\nmulti-line string\n'
 
 # "This is a double quoted string'
-# SuntacError: EOL while scanning string literal
+# SyntaxError: EOL while scanning string literal
 
 
 print( "pass" + "word" )     # password       can combine string using +

@@ -16,7 +16,7 @@ y = 5
 # You cannot use the "global" keyword to work with the global value if you have a parameter of the same name
 # So it's important to know, parameters always win
 # There is not a situation where you have a parameter set that you are going to be interact with a variable of the same name at a higher level
-# even if interacting with the "global" keyword
+# even if interacting with the "global" keyword.
 
 
 

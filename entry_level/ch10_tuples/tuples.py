@@ -9,7 +9,7 @@ print(point[0])     # 2.0
 # 自我补充: tuple is immutable
 print(id(point))
 point2 = (2.0, 3.0)
-print(id(point2))       # (same is as above)
+print(id(point2))       # (same is as above, 因为 tuple 是 immutable 的)
 
 
 # we can never modify a tuple
