@@ -1,5 +1,5 @@
 
-# Generators are functions the behave like a iterator
+# Generators are functions that behave like an iterator
 
 def gen_range(stop, start=1, step=1):
     num = start

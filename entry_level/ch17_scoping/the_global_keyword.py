@@ -26,7 +26,7 @@ def set_x2(z):
     global y     # That means, I have the access to the y variable for the rest of the function that is going to be whatever the global context is
     global a     # and if it doesn't exist yet then we can create it. That's what's going on the "global a"
                  # We can create global varible from inside the function. This is probably the more useful case of using the "global" keyword
-    y = x
+    y = x        # 自悟&加：如果你只想读 y 的值，不用加 global key 也可以（只有parameter 中没有 y），但如果你想在函数内修改 y 的值，global key word 就是必要的了
     a = 7
 
 print("y before set_x:", y)        # y before set_x: 5
@@ -73,7 +73,6 @@ set_x3_2(20)
 # Inside set_x3_2 x: 20
 # Inside set_x3_2 y2: 11
 # Inside set_x3_2 y2_2: 20
-
 
 
 # 例 3.2

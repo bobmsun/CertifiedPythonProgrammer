@@ -31,3 +31,11 @@ l2 = []
 print(id(l1))
 print(id(l2))
 print(l1 == l2)
+
+
+hello = 1
+def change_hello(hello_new):
+    print('inside function', hello)
+    hello = 1
+change_hello(hello)
+print('jjkjjkj', hello)

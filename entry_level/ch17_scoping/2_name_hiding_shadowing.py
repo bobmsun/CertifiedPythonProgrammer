@@ -60,7 +60,7 @@ print(a_list)          # [100, 99, 2, 3, 20]
 # tuple 是 imutable 的
 a_tuple = (1, 2)
 def change_tuple(a_tuple):
-    a_tuple = (1, 2, 3)
+    a_tuple = (1, 2, 3) 
 
 change_tuple(a_tuple)
 print(a_tuple)         # (1, 2)

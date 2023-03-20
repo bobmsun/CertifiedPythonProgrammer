@@ -32,7 +32,7 @@ def can_drive(age, driving_age=16):
     return age >= driving_age
 
 
-print( can_drive(29) )      # True   don't need to explicitly specify driving_age, since it has default value)
+print( can_drive(29) )      # True   don't need to explicitly specify driving_age, since it has default value
 
 
 print( can_drive(16, driving_age=18) )     # False    If you have a very long list of argument that has default and you only want to modify the value of one of them, you can do this
@@ -45,5 +45,5 @@ print( can_drive(driving_age=22) )       # TypeError: can_drive() missing 1 requ
 # def can_drive(age, driving_age=16, vehicle_type):
 #     pass
 # Syntax Error: non-defult argument follows default argument
-# 如果有一个 parameter 是 default argument，剩下的所有 argument 都得是 default argument
+# 如果有一个 parameter 是 default argument，剩下的(之后的)所有 argument 都得是 default argument
 
