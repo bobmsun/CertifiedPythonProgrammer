@@ -31,5 +31,7 @@ print(my_tuple)        # ([1, 2, 3, 1], 1)
 print(other_list)      # that also picked up the change     [1, 2, ([1, 2, 3, 1], 1)]
 
 
-
+# 自己加：tuple 也可以 slice
+# a = (1, 2, 3, 4)
+# print( a[1:3] )      # (2, 3)
 

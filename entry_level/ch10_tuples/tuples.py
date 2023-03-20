@@ -1,5 +1,5 @@
 
-# Another type of seqence in Python. But less used.
+# Another type of sequence in Python. But less used.
 
 # Tuple is an immutable sequence type so it has a fixed length
 point = (2.0, 3.0)

@@ -54,7 +54,7 @@ print(my_list)              # ['a', 'b', 'c', 4, 5, 8, 9, 10]
 print(id(my_list))          # (same id) 
 
 # They don't have to have the same size
-my_list[3:5] = ['d', 'e', 'f']      # size 不 match 也没关系，the list just grow in size
+my_list[3:5] = ['d', 'e', 'f']      # size 不 match 也没关系，the list just grows in size
 print(my_list)              #  ['a', 'b', 'c', 'd', 'e', 'f', 8, 9, 10]
 print(id(my_list))          # (same id) 
 
@@ -70,9 +70,9 @@ print(id(my_list))      # (same id)
 
 # The more common way to remove element is by using the del statement
 # del is a statement, it's different from a function
-del my_list[0]       # remove the first element in the array,    del will NOT return the element it deletes
-print(my_list)      # ['b', 'c', 'd']
-print(my_list[0])     # b
+del my_list[0]       # remove the first element in the array,   del will NOT return the element it deletes
+print(my_list)       # ['b', 'c', 'd']
+print(my_list[0])    # b
 
 print( type(my_list) )    # <class 'list'>
 
@@ -82,3 +82,11 @@ print( my_list is None )   # NameError: name 'my_list' is not defined
 print( type(my_list) )   # NameError: name 'my_list' is not defined
 print(my_list)       # NameError: name 'my_list' is not defined
 
+
+# 自己加：None 全局就一个
+# >>> a = None
+# >>> b = None
+# >>> id(a)
+# 4395219048
+# >>> id(b)
+# 4395219048
