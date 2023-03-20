@@ -31,6 +31,8 @@ print( len(test_str[2:99]) )       # 5
 
 # In slicing, We can also add a step value
 # Defaut is jump by 1 step (in this case you can just leave the step value off)
+# 0 1 2 3 4 5 6 
+# t e s t i n g
 print( test_str[1:5:2] )   # et
 print( test_str[1:6:2] )   # etn
 
@@ -44,6 +46,7 @@ print( test_str[::-1] )    # gnitset
 # 自己加：
 print( test_str[1:6:-2] )   # ""    will print empty string
 print( test_str[6:1:-2] )   # gis
+print( test_str[6:0:-1] )   # gnitse
 print( test_str[6:1:-1] )   # gnits
-print( test_str[6:1] )    # ""   will print empty string, since default step value is 1
+print( test_str[6:1] )      # ""   will print empty string, since default step value is 1
 

@@ -28,9 +28,39 @@ print( "Ha" * 4 )       # HaHaHaHa
 "TeStInG".lower()          # return testing      
 "PassWord123".lower()      # password123        (if it doesn't have lower case, this function will do nothing, will not throw error)
 
-# 自我补充
+# 自我补充（find）
 "hiiiii".find('i')       # return 1
 "hiiiii".find('a')       # return -1
+print("abc13".capitalize())     # Abc13
+
+# 自我补充（rfind）
+# https://www.w3schools.com/python/ref_string_rfind.asp
+# The rfind() method finds the last occurrence of the specified value.
+# The rfind() method returns -1 if the value is not found.
+txt = "Mi casa, su casa."
+x = txt.rfind("casa")
+print(x)        # 12
+
+# 自我补充： .index() & .rindex()  vs.   .find() & .rfind()
+# index() & rindex() 如果要找的东西不存在的话，会 throw error
+# .find() & .rfind() 如果要找的东西不存在的话，会 return -1
+# >>> a = 'abcde'
+# >>> a.index('f')
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# ValueError: substring not found
+# >>> a.rindex('f')
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# ValueError: substring not found
+# >>> a.find('f')
+# -1
+# >>> a.rfind('f')
+# -1
+
+# list 与 string 都有： .find() & .rfind()     .index() & .rindex()     in / not in operator
+
+
 
 # 自我补充
 text = 'HelloWorld'
@@ -49,7 +79,7 @@ print("New\nLine")
 print("New\\nLine")
 
 
-print("'Single' in Double")
-print('"Double" in Single')
-print("\"Double\" in Double")
+print("'Single' in Double")       # 'Single' in Double
+print('"Double" in Single')       # "Double" in Single
+print("\"Double\" in Double")     # "Double" in Double
 

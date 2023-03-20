@@ -22,4 +22,8 @@ print( id(my_str) == id(other_str) )   # True
 # Python knows we will only need to make one of those, because strings are immutable. So it will look at the same spot of memory.
 
 
-
+# 自己查：
+# https://www.scaler.com/topics/mutable-data-types-in-python/ 
+# 上面的 link 会 cover 以下的点：
+# Everything in Python is an object
+# Mutable vs. Immutable

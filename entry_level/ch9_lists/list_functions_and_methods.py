@@ -16,7 +16,7 @@ print(my_list)             # ['a', 1, 2, 3, 4]
 
 
 
-# 自己加：上面加了往 list 里面加 .append 和 插入，那么如果想从 list 里面删除元素怎么办呢？
+# 自己加：上面讲了往 list 里面加 .append 和 插入，那么如果想从 list 里面删除元素怎么办呢？
 # 用 pop function
 # list.pop(index)
 
@@ -30,7 +30,9 @@ print(my_list)             # ['a', 1, 2, 3, 4]
 
 # https://www.programiz.com/python-programming/methods/list/pop
 
-
+# 自己加（pop 函数 take 负 index）：
+# l = ['a', 'b', 'c']
+# l.pop(-1）      # 打印：'c'
 
 
 
@@ -49,7 +51,8 @@ print(my_list.index(2))      # 1
 
 # string 也有 index() function；
 # string 还有 find() 和 rfind() function，但是 list 没有
-
+# string 也可以对其用 in / not in operator
+# 总结：见 ch4 (strings_and_string_operators.py)
 
 
 

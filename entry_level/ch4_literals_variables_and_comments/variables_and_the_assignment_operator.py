@@ -20,3 +20,9 @@ my_string = 1
 # Python variable naming: snake case
 # Use lower case letters and separated by understore
 
+
+# 自己查：
+# https://www.scaler.com/topics/mutable-data-types-in-python/ 
+# 上面的 link 会 cover 以下的点：
+# Everything in Python is an object
+# Mutable vs. Immutable

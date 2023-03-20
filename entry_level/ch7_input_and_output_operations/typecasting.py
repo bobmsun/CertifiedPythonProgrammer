@@ -23,6 +23,10 @@ print( bool('') )      # False
 print( bool(None) )    # False
 # Basically everything else will be evaluated True
 
+# 自己加：
+print( bool(0.0000000001) )     # True
+print( bool(0.000000000)  )     # False
+
 
 # It just returns the first one it runs into:
 # So for AND:
@@ -46,7 +50,7 @@ print(0 or 1 or "This")      # 1     Returns 1 because it is the first truey val
 
 
 print(not "")     # True
-# This is basically doing   print(not bool(""))
+# This is basically doing   print( not bool("") )
 
 
 

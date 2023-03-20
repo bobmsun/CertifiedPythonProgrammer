@@ -1,6 +1,9 @@
 # | pipe
 # & ampersand
 # ^ caret
+# * asterisk
+# % percentage sign
+# # pound sign
 
 print(not True)    # False
  

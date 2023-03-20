@@ -13,6 +13,9 @@ print(6 / 3)    # 2.0    Even if something that is evenly divisible, it's always
 
 # Python 3 中 / 就是 数学上的 division，但之前 Python 2 可不是这样的
 
+# 自己加：
+print( (4 / 2.0) == 2)     # True
+print( 2.0 == 2)           # True
 
 # Floor division
 print(5 // 3)      # 1
