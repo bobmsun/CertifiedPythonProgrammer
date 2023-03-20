@@ -18,6 +18,20 @@ for value in point:
 # 3
 
 
+# Can also iterate a string
+for letter in 'my_string':
+    print(letter)
+# m
+# y
+# _
+# s
+# t
+# r
+# i
+# n
+# g
+
+
 # Can iterate a dictionary
 ages = {'kevin': 59, 'bob': 40, 'kayla': 21}
 for key in ages:
@@ -49,20 +63,4 @@ for i in ages:
 # kevin
 # bob
 # 自悟：如果直接用 for loop iterate 一个 dict，iterate 的是 key
-
-
-
-# Can also iterate a string
-for letter in 'my_string':
-    print(letter)
-# m
-# y
-# _
-# s
-# t
-# r
-# i
-# n
-# g
-
 

@@ -42,9 +42,12 @@ print( "a".isdecimal())       # False
 
 print("1".isdigit())         # True
 print("11".isdigit())        # True
+print("1.1".isdigit())       # False
+print('a'.isdigit())         # False
 
 print( "1.0".isnumeric() )      # False
 print( "10".isnumeric() )       # True
+print('a'.isnumeric())          # False
 
 # Essentially, all these 3 functions work roughly the same way, which is, if the string you are working with is only numbers, 
 # then they should return True
@@ -62,8 +65,8 @@ print( "afasdfasdf123123".isalnum() )    # True
 
 # isidentifier - check to see if the string could be used as a variable name or as a name of a function 
 # or as a name of a class (anything we can use to represent a constant that we can pass around)
-print( "1bead".isidentifier() )       # False 
-print( "word".isidentifier() )        # True   return true because "word" would work to be an identifer
+print( "1bead".isidentifier() )      # False 
+print( "word".isidentifier() )       # True   return true because "word" would work to be an identifer
 print( "if".isidentifier() )         # True    （自悟：居然 return true，看来不check keyword）
 
 # From W3 school:

@@ -44,3 +44,6 @@ print("My name is: %s %s" % ("keith", "Thompson"))   # it will unpack the tuple 
 # If you look at some Python2 source code, you will very commonly see this
 
 
+# 自己加：tuple 也可以 slice，like a list
+# a = (1, 2, 3, 4)
+# print( a[1:3] )      # (2, 3)

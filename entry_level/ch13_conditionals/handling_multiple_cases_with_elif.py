@@ -3,7 +3,7 @@
 if 'b' < 'a':
     print('This is true')
 elif 'c' < 'd':
-    print('Second condition is true')
+    print('Second condition is true')        # This line will be printed out
 else:
     print("no condition was true")
 

@@ -52,3 +52,4 @@ else:
     print("Green is not in the list")
 
 # Green is in the list
+# 自悟：在最后一个iteration break，也不算successfully traverse 完了整个 loop

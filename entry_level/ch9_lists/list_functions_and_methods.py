@@ -122,8 +122,15 @@ names = ['Alice', 'Bob', 'Lance', 'Mike']
 names[1:2] = []
 print(names)             # ['Alice', 'Lance', 'Mike']
 
+# 法三：通过 del command
+names = ['Alice', 'Bob', 'Lance', 'Mike']
+del names[2]
+print(names)      # ['Alice', 'Bob', 'Mike']
+# del names     就把整个 list 都删了，names variable will be undefined
 
-
+# 法四：通过 pop函数
+# pop()  可以 pass in 想要pop 的 element 的 index
+# 如果不 pass in 任何参数，参数默认为 -1，pop 最后一个 element
 
 
 

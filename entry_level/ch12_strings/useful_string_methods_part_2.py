@@ -10,7 +10,7 @@ print( phrase.split("i"))     # ['Th', 's ', 's a s', 'mple phrase']
 # let's say I just want the last segment of the url
 url = "https://example.com/users/jimmy"
 user = url.split('/')[-1]   # [-1] get the last portion
-print( user )
+print( user )               # jimmy
 
 print( url.split('/') )       # ['https:', '', 'example.com', 'users', 'jimmy']
 

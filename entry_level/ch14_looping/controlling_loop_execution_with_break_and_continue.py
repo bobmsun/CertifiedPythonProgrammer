@@ -7,12 +7,12 @@ while count < 10:
     print(f"We're counting odd numbers: {count}")     # f string: kind of like a shortcut of format
     count += 1
 
-
 # We're counting odd numbers: 1
 # We're counting odd numbers: 3
 # We're counting odd numbers: 5
 # We're counting odd numbers: 7
 # We're counting odd numbers: 9
+
 
 count = 1
 while count < 10:
