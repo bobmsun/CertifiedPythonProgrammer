@@ -106,6 +106,7 @@ print( list(reversed(sorted(my_list))) )       # [8, 4, 3, 2, 1]
 # Otherwise it gonna eventually run into an Error
 
 
+
 # 自己加：remove element from a list
 # 法一：用 remove function
 names = ['Alice', 'Bob', 'Lance', 'Mike']
