@@ -27,13 +27,13 @@ class Vehicle:
 
 
 # python -i vehicle.py
-# civic = Vehicle('4-cyclinder', ['front-deriver', 'front-passenger', 'rear-driver', 'rear-passenger'])         # we don't pass in self, self is passed in implicitly
+# civic = Vehicle('4-cyclinder', ['front-driver', 'front-passenger', 'rear-driver', 'rear-passenger'])         # we don't pass in self, self is passed in implicitly
 # civic                            # <__main__.Vehicle object at 0x7fe42b3bef28>
 # type(civic)                      # <class '__main__.Vehicle'>
 # civic.engine                     # '4-cyclinder'
-# civic.tires                      # ['front-deriver', 'front-passenger', 'rear-driver', 'rear-passenger']
+# civic.tires                      # ['front-driver', 'front-passenger', 'rear-driver', 'rear-passenger']
 # civic.description                # <bound method Vehicle.description of <__main__.Vehicle object at 0x7fe42b3bef28>>
-# civic.description()
+# civic.description()              # 打印：A vehicle with an 4-cyclinder engine, and ['front-driver', 'front-passenger', 'rear-driver', 'rear-passenger'] tires
 # civic.serial_number = '1234'     # it has engine and tires, you can also attach more things
 # civic.serial_number
 

@@ -66,6 +66,11 @@ class Vehicle:
                            # 这里想展示的点在于：It is worth talking about these class-level variables are accessible on the instance, by default
 # Vehicle.default_tire     # 'tire'
 
+# 自己试了一下：(class variable 可以改)
+# Vehicle.default_tire = 'haha'
+# a = Vehicle.bicycle()
+# a.tires                  # ['haha', 'haha']
+
 
 # If you want the whole trifecta of things
 # that you would do here,
