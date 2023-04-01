@@ -43,7 +43,7 @@ a = 0
 def change_value2():
     print("Inner a (change_value2):", a)     # 这行会报错 UnboundLocalError: local variable 'a' referenced before assignment
     a = 999
-change_value2()
+#change_value2()
 print(a)   # 到不了这行，之前就报错了
 
 
@@ -58,6 +58,31 @@ def append_number(list_input):
 append_number(a_list)
 print(a_list)          # [100, 99, 2, 3, 20]
 
+
+a_list_4 = [1, 2, 3]
+def change_list_4(a_list_4):
+    a_list_4[0] = 100
+    a_list_4.insert(1, 99)
+    a_list_4.append(20)
+    print(a_list_4)        # [100, 99, 2, 3, 20]
+    return a_list_4
+result_4 = change_list_4(a_list_4)
+print(result_4)            # [100, 99, 2, 3, 20]
+print(a_list_4)            # [100, 99, 2, 3, 20]
+
+
+a_list_5 = [1, 2, 3]
+def change_list_4(a_list_5):
+    a_list_5[0] = 100
+    a_list_5.insert(1, 99)
+    a_list_5.append(20)
+    print(a_list_5)         # [100, 99, 2, 3, 20]
+    return a_list_5
+result_5 = change_list_4([1, 2, 3])
+print(result_5)             # [100, 99, 2, 3, 20]    
+print(a_list_5)             # [1, 2, 3]
+
+
 a_list_1 = [1, 2, 3]
 def change_list_1():
     print(a_list_1)       # [1, 2, 3]
@@ -67,9 +92,11 @@ def change_list_1():
 change_list_1()
 print(a_list_1)           # [2, 3, 4]
 
+
+# 以下启示：不能有 assignment，一旦有了，就认为是函数内定义的 local variable了（这点跟 immutable 一样）
 a_list_2 = [1, 2, 3]
 def change_list():
-    print(a_list_2)       # UnboundLocalError: local variable 'a_list' referenced before assignment
+    print(a_list_2)       # UnboundLocalError: local variable 'a_list_2' referenced before assignment
     a_list_2.append(4)
     a_list_2.pop(0)
     print(a_list_2)
@@ -77,13 +104,15 @@ def change_list():
 change_list()
 print(a_list_2)            # run 不到这行
 
+
+# 这个例子跟 a_list_4 一样了
 a_list_3 = [1, 2, 3]
-def change_list(a_list_3):
+def change_list_3(a_list_3):
     print(a_list_3)        # [1, 2, 3]
     a_list_3.append(4)
     a_list_3.pop(0)
     print(a_list_3)        # [2, 3, 4]
-change_list(a_list_3)
+change_list_3(a_list_3)
 print(a_list_3)            # [2, 3, 4]
 
 

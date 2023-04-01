@@ -9,10 +9,10 @@ def gen_range(stop, start=1, step=1):
     num = start
     while num <= stop:
         yield num       # when we hit this "yield", it will work like a "return" essentially. Once it's returned, it's gonna stop right mid executions, 
-                        # so it's not gonna continue on with the loop. It's gonna pause right here util we ask it for the next item.
+                        # so it's not gonna continue on with the loop. It's gonna pause right here until we ask it for the next item.
                         # Then it will pick where we left off and continue on and yield again
                         # This is how we can build a function that can behave like a iterator. Becuase we just need the function to be able to pause
-                        # temporarily and yield us the next item the next we ask for one.
+                        # temporarily and yield us the next item the next time we ask for one.
         num += step 
         
 
