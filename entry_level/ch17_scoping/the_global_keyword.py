@@ -6,15 +6,15 @@
 
 # 例 1
 y = 5
-# def set_x(y):
-#     print("Inner y:", y)
-#     x = y 
-#     global y          # 这一行会报错    SyntaxError: name 'y' is parameter and global
-#     y = x
-# set_x(10)
-# print("Outer y:", y)
+def set_x(y):
+    print("Inner y:", y)
+    x = y 
+    global y          # 这一行会报错    SyntaxError: name 'y' is parameter and global
+    y = x
+set_x(10)
+print("Outer y:", y)
 # You cannot use the "global" keyword to work with the global value if you have a parameter of the same name
-# So it's important to know, parameters always win
+# So it's important to know, parameters always win.
 # There is not a situation where you have a parameter set that you are going to be interact with a variable of the same name at a higher level
 # even if interacting with the "global" keyword.
 
@@ -86,7 +86,7 @@ def set_x4():
 set_x4()
 
 # 启示：if we are just using y (例3.1)，是可以的；在外面定义的 y can be used in this more localized setting  
-# （自悟：这点的前提是 parameter 中不能有重名的 y，否则会 name mangling，上一讲讲的，也就是例 3.1.1）
+# （自悟：这点的前提是 parameter 中不能有重名的 y，否则会 name hiding [shadowing]，上一讲讲的，也就是例 3.1.1）
 # 但如果像 例 3.2 中，如果我们加入了 assignment，it's not going to change something higher
 # because we are assigning y 在下面，it's assuming that y is suppose to be local
 # 这就是为什么会在上面报 Error 说，UnboundLocalError: local variable 'y3' referenced before assignment

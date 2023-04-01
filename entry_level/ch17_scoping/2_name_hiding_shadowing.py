@@ -43,7 +43,7 @@ a = 0
 def change_value2():
     print("Inner a (change_value2):", a)     # 这行会报错 UnboundLocalError: local variable 'a' referenced before assignment
     a = 999
-#change_value2()
+change_value2()
 print(a)   # 到不了这行，之前就报错了
 
 
