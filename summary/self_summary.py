@@ -53,3 +53,11 @@ print('sed' in 'fsdagsag')   # False
 # whereas find() returns the index position of the element's first occurrence, i.e. the very first index.
 print('abcdefg'.rfind('def'))   # 3
 
+
+
+# python 中的 0，empty list，空串，None 都是 False
+print(bool([]))    # False
+print(bool(''))    # False
+print(bool(None))  # False
+print(bool(0))     # False
+print(bool(0.01))  # True
