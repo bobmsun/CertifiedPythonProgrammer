@@ -61,3 +61,10 @@ print(bool(''))    # False
 print(bool(None))  # False
 print(bool(0))     # False
 print(bool(0.01))  # True
+
+
+
+# Python infinity
+print('Positive Infinity: ', float('inf'))      # Positive Infinity:  inf
+print('Negative Infinity: ', float('-inf'))     # Negative Infinity:  -inf
+
