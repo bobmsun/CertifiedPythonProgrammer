@@ -46,6 +46,6 @@ print(-5 // 2)   # -3   Java 中 -5 / 2 = -2
 
 
 # Power
-print(2 ** 3)    # 8
-
+print(2 ** 3)     # 8
+print(2.0 ** 3)   # 8.0    自悟：运算子中有 float，结果就是 float
 

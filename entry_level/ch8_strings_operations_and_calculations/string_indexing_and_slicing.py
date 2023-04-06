@@ -9,7 +9,7 @@ print( test_str[0] )      # t
 
 # Negative indexing
 print( test_str[len(test_str) - 1] )     # g
-print( test_str[-1] )        # g
+print( test_str[-1] )      # g
 print( test_str[-4] )      # t
 
 # test_str[-10]    IndexError: string index out of range
@@ -29,9 +29,14 @@ print( test_str[2:] )       # sting   This is the shorthand of above   start fro
 print( test_str[2:99] )      # sting 
 print( len(test_str[2:99]) )       # 5
 
+# 自己加：
+print(test_str[3:-1])     # tin
+print(test_str[2:-2])     # sti
+
+
 # In slicing, We can also add a step value
 # Defaut is jump by 1 step (in this case you can just leave the step value off)
-# 0 1 2 3 4 5 6 
+# 0 1 2 3 4 5 6
 # t e s t i n g
 print( test_str[1:5:2] )   # et
 print( test_str[1:6:2] )   # etn
@@ -47,6 +52,7 @@ print( test_str[::-1] )    # gnitset
 print( test_str[1:6:-2] )   # ""    will print empty string
 print( test_str[6:1:-2] )   # gis
 print( test_str[6:0:-1] )   # gnitse
+print( test_str[8:0:-1] )   # gnitse
 print( test_str[6:1:-1] )   # gnits
 print( test_str[6:1] )      # ""   will print empty string, since default step value is 1
 

@@ -58,7 +58,35 @@ print(x)        # 12
 # >>> a.rfind('f')
 # -1
 
-# list 与 string 都有： .find() & .rfind()     .index() & .rindex()     in / not in operator
+# list 与 string 都有：  .index() & .rindex()     in / not in operator
+# list 没有  .find() & .rfind()  
+print('case' in 'fdsbhicase gga')         # True
+print('case' not in 'dfsagdaga fdsa')     # True
+print('abc' in 'fdsgagdssa')              # False
+print( ['a', 23, False, [1, 2, 3]].index(23))     # 1
+print( ['a', 23, False, [1, 2, 3]].index(293) )   # ValueError: 293 is not in list
+print(False in ['a', 23, False, [1, 2, 3]])       # True
+print([1, 2, 3] in ['a', 23, False, [1, 2, 3]])   # True     注意：这里是 True，由此引申出以下补充
+
+
+# 自我补充：in   vs.   ==
+print( [1, 2, 3] == [1, 2, 3] )     # True
+print( [1, 2, 3] is [1, 2, 3] )     # False
+# 摘自：https://www.w3schools.com/python/ref_keyword_is.asp
+# The is keyword is used to test if two variables refer to the same object.
+# The test returns True if the two objects are the same object.
+# The test returns False if they are not the same object, even if the two objects are 100% equal.
+# Use the == operator to test if two variables are equal.
+# 自我补充：
+print([1, 2, 3] == [1, 2, 3])          # True
+print((1, 2, 3) == (1, 2, 3))          # True
+print({'a': 1, 'b': 2} == {'b': 1, 'a': 2})      # False
+print({'a': 1, 'b': 2} == {'b': 2, 'a': 1})      # True
+set_a = set([1, 2, 3])
+set_b = set([1, 2, 3])
+set_c = set([3, 2, 1])
+print(set_a == set_b)                  # True
+print(set_a == set_c)                  # True
 
 
 

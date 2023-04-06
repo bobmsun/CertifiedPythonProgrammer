@@ -16,7 +16,7 @@ print(id(my_str))
 # In Python, every single unique stirng that you can create. Once it's created, that's the only one of that exact string that will ever be created.
 print(id('testing'))    # this will be the same id even though this is a literal made separately
 other_str = 'testing'
-print(id(other_str))   # Still the same id
+print(id(other_str))    # Still the same id
 print( id(my_str) == id(other_str) )   # True
 
 # Python knows we will only need to make one of those, because strings are immutable. So it will look at the same spot of memory.

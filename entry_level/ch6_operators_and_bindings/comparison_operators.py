@@ -40,6 +40,18 @@ print('a' == 'a')    # True
 print( 1 != 1 )      # False
 print( 2 != 1.0 )    # True
 
+# 自我补充：
+print([1, 2, 3] == [1, 2, 3])          # True
+print((1, 2, 3) == (1, 2, 3))          # True
+print({'a': 1, 'b': 2} == {'b': 1, 'a': 2})      # False
+print({'a': 1, 'b': 2} == {'b': 2, 'a': 1})      # True
+set_a = set([1, 2, 3])
+set_b = set([1, 2, 3])
+set_c = set([3, 2, 1])
+print(set_a == set_b)                  # True
+print(set_a == set_c)                  # True
+
+
 
 # Identity operator
 print( 1 is 1 )    # True
@@ -52,9 +64,9 @@ print( 1 is 1 )    # True
 print( 1 is 1.0 )   # False, because there is two distinct object
 print( ['a'] is ['a'])    # False     自己加/悟：因为不是同一个 object
 
-print( 1.0 is 1.0 )  # True
+print( 1.0 is 1.0 )  # True            # 注：float 也是 immutable 的
 
-print( 'a' is 'a')  # True
+print( 'a' is 'a')   # True            # 注： type('a')  ->  <class 'str'>
 
 print('a' is not 'a')   # False
 
@@ -84,6 +96,20 @@ print(id(2.0))
 print( [] is [] )      # False, because you can modify an empty, so Python will put this in different memory
 
 
+# 自己试：
+print(id([]))
+print(id([]))        # same id as above
 
+print(id(['a']))     # same id as above
+print(id(['b']))     # same id as above
 
+empty1 = []          # same id as above
+empty2 = []          # different id 1
+empty3 = ['a']       # different id 2
+empty4 = ['b']       # different id 3
+
+print(id(empty1))
+print(id(empty2))
+print(id(empty3))
+print(id(empty4))
 

@@ -37,7 +37,7 @@ print('This' and 'That')       # That
 print('This' and 0 and 'That')      # 0, 都没有看到 ‘That’
 
 print(0 and 'That')     # 0
-print(0.0 and 1)     # 0.0
+print(0.0 and 1)        # 0.0
 
 
 # It just returns the first one it runs into
