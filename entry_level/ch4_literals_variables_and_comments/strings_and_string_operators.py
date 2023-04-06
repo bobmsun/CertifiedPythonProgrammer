@@ -63,8 +63,10 @@ print(x)        # 12
 print('case' in 'fdsbhicase gga')         # True
 print('case' not in 'dfsagdaga fdsa')     # True
 print('abc' in 'fdsgagdssa')              # False
+
 print( ['a', 23, False, [1, 2, 3]].index(23))     # 1
 print( ['a', 23, False, [1, 2, 3]].index(293) )   # ValueError: 293 is not in list
+
 print(False in ['a', 23, False, [1, 2, 3]])       # True
 print([1, 2, 3] in ['a', 23, False, [1, 2, 3]])   # True     注意：这里是 True，由此引申出以下补充
 
