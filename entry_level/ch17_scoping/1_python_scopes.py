@@ -22,9 +22,9 @@ def set_a():
 
 set_a()
 
-while a < 6:    # NameError: name 'a' is not defined
-    print(a)
-    a += 1
+#while a < 6:    # NameError: name 'a' is not defined
+#    print(a)
+#    a += 1
 
 # Functions and classes they define their own scope - that means a variable that creates inside a function remains inside the function
 # 对于以上，we are not able to access a where a is only set inside the set_a() function
@@ -40,19 +40,27 @@ print(num)         # 22
 
 
 # 自己加：对比以下
+hello_0 = 1
+def change_hello_0(hello_0):
+    print('hafdafdsaf', hello_0)
+change_hello_0(2)    # 2     注意：print 得不是 1
+# 自悟：function 里面的 hello_0 是属于 function 里面的，因为function 有自己的 own scope
+# parameter 的名字为 hello_0，就 hide 了 function外 同名的变量（见下一节 name hiding）
+
+
 hello = 1
 def change_hello(hello):
     hello = 2
     return hello 
 change_hello(hello)
 print(hello)       # 1
-# 自悟：function 里面的 hello 是属于 function 里面的，因为function 有自己的 own scope
-# parameter 的名字为 hello，就 hide 了 function外 同名的变量（见下一节 name hiding）
+
 
 hello_1 = 3
 def change_hello_1():
     print(hello_1)     # 这里可以被 reference 到
-change_hello_1()     # 会 print 3
+change_hello_1()       # 会 print 3
+
 
 hello_2 = 33
 def change_hello_2():
@@ -63,6 +71,7 @@ def change_hello_2():
 change_hello_2()       # 会 print 44, 45
 print(hello_2)         # 33
 # 自悟：一旦有了 assignment 就默认 是函数里 create 的了，scope 就仅限函数里
+
 
 hello_3 = 1
 def change_hello_3():
