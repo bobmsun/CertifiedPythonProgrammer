@@ -1,5 +1,4 @@
 
-
 # function normally starts with lower case letter
 # snake case
 
@@ -13,7 +12,7 @@ def print_name(name):
     print(f"Name is {name}")        # f string allows us to interprate things
 
 
-print( print_name )        # will just tell you it's a function
+print( print_name )      # <function print_name at 0x7fa31abb4378>     # will just tell you it's a function
 
 # print_name()       # TypeError: print_name() missing 1 required positional argument: 'name'
 

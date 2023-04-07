@@ -1,6 +1,6 @@
 
 phrase = "This is a simple phrase"
-words = phrase.split()
+words = phrase.split()         # by default, split by space
 
 print( words )     # ['This', 'is', 'a', 'simple', 'phrase']
 
@@ -32,7 +32,7 @@ template = "Hello, my name is {}, and I really enjoy {}, Have a nice day!"
 print( template.format('Keith', 'Python') )
 
 print( template.format('Keith', 'Python', True) )    # Hello, my name is Keith, and I really enjoy Python, Have a nice day!
-# it's going to disregard the 多余的value instead of throwing an error
+# it's going to disregard the 多余的 value instead of throwing an error
 
 # print( template.format('Keith') )     # Error
 
@@ -50,7 +50,7 @@ a_test_str = '    a  b  c     '
 a_test_str.strip()
 print(a_test_str)        #     a  b  c       已在证明 strip 不改变原 string，而是生成新 string (当然不改变，因为string 是 immutable 的)
 
-print(a_test_str.strip())      # a  b  c
+print(a_test_str.strip())      # a  b  c        # .strip() 的 default 参数是 space
 
 a_test_str = '\n    a  b  c     \n'
 print(a_test_str.strip('\n'))    #     a  b  c

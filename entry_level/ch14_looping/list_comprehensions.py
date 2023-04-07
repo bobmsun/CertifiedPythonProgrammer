@@ -38,5 +38,12 @@ print( warm_colors )
 # ['red', 'orange', 'yellow']
 
 
+# 自己加：
+# warm_colors = [(color if color in ['red', 'orange', 'yellow']) for color in colors]
+# 上面这种写法，会显示 syntax error，run 不了           SyntaxError: invalid syntax#
 
+warm_colors = [(color if color in ['red', 'orange', 'yellow'] else 'haha') for color in colors]
+print(warm_colors)       # ['red', 'haha', 'orange', 'haha', 'yellow']
 
+warm_colors = [color if color in ['red', 'orange', 'yellow'] else 'haha' for color in colors]
+print(warm_colors)       # ['red', 'haha', 'orange', 'haha', 'yellow']

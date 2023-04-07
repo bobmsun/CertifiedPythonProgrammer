@@ -23,6 +23,9 @@ print(len(my_list))   # 5
 # Slicing: get a subsection of the list
 # When we slice a string, we get a string back
 # When we slice a list, we get a list back
+# 自己加：When we slice a tuple, we get a tuple back
+t = (1, 2, 3, 4, 5)
+t[1:4]       # (2, 3, 4)
 
 
 print(my_list[0:2])   # [1, 2]
@@ -38,7 +41,7 @@ print(my_list[0::2])   # [1, 3, 5]
 print(id(my_list))
 my_list[0] = 'a'
 print(my_list)     # modify the list in place    这里是 mutability 的体现
-print(id(my_list))
+print(id(my_list))    # 跟上面是一样的 id
 
 print(my_list + [8, 9, 10])     # here is going to return a new list
 

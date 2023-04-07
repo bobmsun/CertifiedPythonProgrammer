@@ -16,7 +16,7 @@ print(id(point2))       # (same is as above, 因为 tuple 是 immutable 的)
 # point[0] = 1      # TypeError: 'tuple' object does not support item assignment
 # Because tuple is an immutable type
 
-# We still operations that we would have with strings that would return a new tuple
+# We still have operations that we would have with strings that would return a new tuple
 point_3d = point + (4.0,)           # To state (4.0) is a tuple, we have to add a comma; otherwise it will 认为它是一个 math operation
 print(point_3d)      # (2.0, 3.0, 4.0)
 

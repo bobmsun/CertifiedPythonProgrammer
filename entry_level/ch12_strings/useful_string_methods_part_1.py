@@ -31,19 +31,25 @@ print( my_str.istitle() )    # False      check if it is title-cased
 
 print( my_str.title().istitle() )      # True
 
+# (由上面👆引出）自己加： .title() 函数
+# The title() method returns a string where the first character in every word is upper case. Like a header, or a title.
+# If the word contains a number or a symbol, the first letter after that will be converted to upper case.
+print("Welcome to my world".title())     # Welcome To My World
+
+
 print( " ".isspace() )        # True 
 print( "f".isspace() )        # False       if there is any kind of character, then return false
 
 
 # isdecimal, isdigit, isnumeric
-print( "1.0".isdecimal() )     # False    return Fase
-print( "1".isdecimal() )       # True    check if it's a decimal notation, which basically means if it is a whole number, cannot contain '.'
+print( "1.0".isdecimal() )    # False    return Fase
+print( "1".isdecimal() )      # True    check if it's a decimal notation, which basically means if it is a whole number, cannot contain '.'
 print( "a".isdecimal())       # False
 
-print("1".isdigit())         # True
-print("11".isdigit())        # True
-print("1.1".isdigit())       # False
-print('a'.isdigit())         # False
+print("1".isdigit())          # True
+print("11".isdigit())         # True
+print("1.1".isdigit())        # False
+print('a'.isdigit())          # False
 
 print( "1.0".isnumeric() )      # False
 print( "10".isnumeric() )       # True
@@ -76,7 +82,7 @@ print( "if".isidentifier() )         # True    （自悟：居然 return true，
 
 
 # isprintable
-print( "This is printable".isprintable() )   # True
+print( "This is printable".isprintable() )       # True
 print( "This is printable\n".isprintable() )     # False
 # it's gonna return False even though we could print it. It's not considered printable because it has a escape charater 
 # (since escape charater cannot be printed out)

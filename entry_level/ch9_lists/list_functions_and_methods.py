@@ -9,6 +9,14 @@ my_list.append(4)    # it's gonna put it to the very end of the list
 print(my_list)        # [1, 2, 3, 4]
 print(id(my_list))     # (same id)
 
+# 自己加：（+ / += 的方法与 .append 相比，区别在于：+ / += 不是 inplace 的）
+my_list_2 = my_list + [4, 5, 6]
+print(my_list_2)    # [1, 2, 3, 4, 4, 5, 6]
+# my_list_2 += 7    # 会报错：TypeError: 'int' object is not iterable
+my_list_2 += [7]
+print(my_list_2)    # [1, 2, 3, 4, 4, 5, 6, 7]
+
+
 # If we want to add something somewhere else within the list, we have to use the "insert" function
 my_list.insert(0, 'a')
 print(my_list)             # ['a', 1, 2, 3, 4]

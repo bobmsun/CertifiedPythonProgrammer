@@ -1,5 +1,4 @@
 
-
 # There is difference between parameter and argument
 
 def contact_card(name, age, car_model):   # These are parameters. These are the variables we define when we define the function itself

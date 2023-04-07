@@ -1,5 +1,4 @@
 
-
 # Occasionally, we want functions to behave like iterators
 # benifit of "range" - we can just get the next item and not have to calcuate all the items in the big list that we are working with
 
@@ -23,7 +22,6 @@ print( next(generator) )    # 2
 print( next(generator) )    # 3
 print( next(generator) )    # 4
 print( next(generator) )    # 5
-
 # print( next(generator) )    # Error: StopIteration
 
 
